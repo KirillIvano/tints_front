@@ -6,7 +6,8 @@ export function assertExists<T,>(x: T | null | undefined): asserts x is T {
     }
 }
 
-export const tryValue = <T,>(x: T | null | undefined): T => {
+export const tryValue = <T,>(x: T | undefined): T => {
     assertExists(x);
+
     return x;
 };
