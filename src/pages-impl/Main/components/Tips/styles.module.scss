@@ -1,0 +1,19 @@
+@import "~vars/pads";
+@import "~vars/screen";
+
+.allTipsContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: $pad3;
+
+    .allTips {
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .tip + .tip {
+        margin-top: $pad6;
+    }
+}
