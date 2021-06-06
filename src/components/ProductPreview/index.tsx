@@ -10,8 +10,10 @@ export type ProductPreviewProps = {
     price: number;
 }
 
-const ProductPreview = () => (
-    
+const ProductPreview = (props: ProductPreviewProps) => (
+    <div>
+
+    </div>
 );
 
 export default ProductPreview;

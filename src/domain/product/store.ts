@@ -19,7 +19,7 @@ export class ProductStore implements IProductStore {
     }
 
     @computed
-    get previews() {
+    get productPreviews() {
         return [...this._productPreviews];
     }
 
@@ -29,7 +29,6 @@ export class ProductStore implements IProductStore {
     hydratePreviews(previews: ProductPreview[]) {
         this._productPreviews = [...previews];
     }
-
     hydrateProduct(product: Product) {
         this._products.set(product.id, product);
     }

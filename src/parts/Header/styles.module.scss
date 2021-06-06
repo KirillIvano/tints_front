@@ -1,0 +1,27 @@
+@import "~vars/screen";
+
+.header {
+    height: 100px;
+}
+
+.header__content {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    align-items: center;
+
+    height: 100%;
+
+    .header__logo {
+        grid-column: 1;
+    }
+
+    .header__nav {
+        grid-column: 3;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .header {
+        grid-template-columns: 80px 1fr auto;
+    }
+}

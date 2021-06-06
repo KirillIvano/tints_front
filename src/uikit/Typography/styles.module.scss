@@ -1,0 +1,14 @@
+@import "~vars/fonts";
+@import "~vars/colors";
+
+.typo_xs { font-size: $font_xs }
+.typo_sm { font-size: $font_sm }
+.typo_md { font-size: $font_md }
+.typo_lg { font-size: $font_lg }
+.typo_xl { font-size: $font_xl }
+.typo_xxl { font-size: $font_xxl }
+.typo_xxxl { font-size: $font_xxxl }
+
+.color_black { color: $black }
+.color_dark-gray { color: $dark_gray }
+.color_white { color: $white }

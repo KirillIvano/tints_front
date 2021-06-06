@@ -1,0 +1,25 @@
+@import "~vars/screen";
+
+.grid {
+    width: 100%;
+    margin: 0 auto;
+
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+@media all and (min-width: $screen_sm) {
+    .grid { width: 540px }
+}
+
+@media all and (min-width: $screen_md) {
+    .grid { width: 720px }
+}
+
+@media all and (min-width: $screen_lg) {
+    .grid { width: 960px }
+}
+
+@media all and (min-width: $screen_xl) {
+    .grid { width: 1140px }
+}

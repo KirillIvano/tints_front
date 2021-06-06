@@ -1,4 +1,4 @@
-import {allProductsResource, allShadesResource} from '@/resources/product/product';
+import {allProductsResource, allShadesResource} from '@/resources/product';
 import {getApiUrl} from '@/util/getApiUrl';
 
 export const getAllProducts = () => allProductsResource.makeRequest(

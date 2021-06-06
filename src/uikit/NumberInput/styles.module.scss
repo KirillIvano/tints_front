@@ -7,7 +7,7 @@
 
     width: 160px;
     padding: 2px 40px;
-    background: $medium_gray;
+    background: $dark_gray;
 
     .leftControl,
     .rightControl {
@@ -24,7 +24,7 @@
 
         font-size: $font_lg;
         border: none;
-        background-color: $medium_gray;
+        background-color: $dark_gray;
 
         transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 
@@ -32,7 +32,7 @@
 
         &:hover,
         &:focus {
-            background-color: darken($medium_gray, 8);
+            background-color: darken($dark_gray, 8);
         }
 
         &:focus {

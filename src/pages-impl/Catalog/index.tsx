@@ -15,9 +15,11 @@ const CatalogPage = () => {
         catalogStore.hydrate();
     }, [catalogStore]);
 
-    return (<pre>
-        {JSON.stringify(productsStore, undefined, 2)}
-    </pre>);
+    return (
+        <pre>
+            {JSON.stringify(productsStore, undefined, 2)}
+        </pre>
+    );
 };
 
 export default CatalogPage;

@@ -1,0 +1,42 @@
+@import "~vars/colors";
+@import "~vars/fonts";
+@import "~vars/pads";
+
+.input {
+    display: block;
+    width: 100%;
+
+    min-width: 0;
+    padding: $pad1;
+
+    border: 1px solid $black;
+    border-radius: 2px;
+    background: #fff;
+
+    color: $black;
+    font-size: $font_sm;
+
+    transition: box-shadow 0.3s;
+}
+
+.select {
+    cursor: pointer;
+}
+
+.input.large {
+    padding: $pad3 $pad4;
+}
+
+.input::placeholder {
+    color: $dark_gray;
+}
+
+.input:focus,
+.input:hover {
+    outline: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)
+}
+
+.input:disabled {
+    background-color: $dark_gray;
+}

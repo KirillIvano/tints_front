@@ -18,7 +18,11 @@ const Button = ({
 }: ButtonProps) => (
     <button
         {...props}
-        className={classnames(className, styles.button)}
+        className={classnames(
+            className,
+            styles.button,
+            styles[`size_${size}`],
+        )}
     />
 );
 
