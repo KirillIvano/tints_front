@@ -1,0 +1,72 @@
+@import "~vars/colors";
+@import "~vars/pads";
+@import "~vars/borders";
+@import "~vars/screen";
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: $radius_large;
+
+    padding-bottom: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .preview__overlay {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        padding: $pad9;
+
+        transition: background-color 0.3s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .preview__button {
+        position: absolute;
+        right: $pad9;
+        bottom: $pad9;
+
+        width: 32px;
+        height: 32px;
+
+        background-size: cover;
+        background-image: url("/icons/arrow.svg");
+    }
+}
+
+.preview__link:hover,
+.preview__link:active,
+.preview__link:focus {
+    .preview__overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .preview__button {
+        animation: move 1.2s ease-out reverse infinite;
+    }
+}
+
+.preview__link:focus {
+    outline: none;
+}
