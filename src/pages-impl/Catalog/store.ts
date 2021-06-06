@@ -14,9 +14,7 @@ class CatalogStore {
     constructor(
         private _productStore: IProductStore,
         private _hydrationStore: IHydrationStore<CatalogProps>,
-    ) {
-        // this.hydrate();
-    }
+    ) {}
 
     hydrate() {
         const {previews} = this._hydrationStore.getData();

@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import 'focus-visible';
+import 'flexboxgrid2';
 import {AppProps} from 'next/app';
 
 import {useAppInit} from '@/hooks/useAppInit';
@@ -12,11 +13,9 @@ const App = ({
     Component,
     pageProps,
 }: AppProps) => {
-    useAppInit(pageProps);
-
     return (
         <div className="app">
-            <Header />
+            {/* <Header /> */}
 
             <main>
                 <Component {...pageProps} />
