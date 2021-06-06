@@ -1,15 +1,12 @@
-import React from 'react';
-
-import {DINames} from '@/di/keys';
-import {useInject} from '@/di/useInject';
+import {useSyncEffect} from '@/hooks/useSyncEffect';
+import {useProductStore} from '@/domain/product/hooks';
 
 import {useCatalogStore} from './hooks/useCatalogStore';
-import {useSyncEffect} from '@/hooks/useSyncEffect';
 
 
 const CatalogPage = () => {
     const catalogStore = useCatalogStore();
-    const productsStore = useInject(DINames.PRODUCT_STORE);
+    const productsStore = useProductStore();
 
     useSyncEffect(() => {
         catalogStore.hydrate();
