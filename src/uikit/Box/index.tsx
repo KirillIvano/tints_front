@@ -24,4 +24,4 @@ const Box = (
 );
 
 
-export default React.forwardRef(Box);
+export default Box;
