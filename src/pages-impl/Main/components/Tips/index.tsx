@@ -8,33 +8,22 @@ import styles from './styles.module.scss';
 import {Reference, Typo} from '@/uikit';
 
 
-const TipsSection = ({className}: StyledProps) => (
+const TipsSection = ({className, Tips, showAll = false}: StyledProps) => (
     <>
         <div className={cn(className, 'row')}>
-            <div className={cn('col-xs-12 col-md-4', styles.tip)}>
-                <ArticlePreview
-                    caption="ЛОЛ КЕК"
-                    href="/TODO"
-                    image="/about/first.png"
-                />
-            </div>
-            <div className={cn('col-xs-12 col-md-4', styles.tip)}>
-                <ArticlePreview
-                    caption="ЛОЛ КЕК"
-                    href="/TODO"
-                    image="/about/first.png"
-                />
-            </div>
-            <div className={cn('col-xs-12 col-md-4', styles.tip)}>
-                <ArticlePreview
-                    caption="ЛОЛ КЕК"
-                    href="/TODO"
-                    image="/about/first.png"
-                />
-            </div>
+            {Tips && Tips.map(({caption, href, image}, index) => {
+                return (
+                    <div className={cn('col-xs-12 col-md-4', styles.tip)}>
+                        <ArticlePreview
+                            caption={caption}
+                            href={href}
+                            image={image}
+                            key={index}
+                        />
+                    </div>
+                )})}
         </div>
-
-        <div className={styles.allTipsContainer}>
+        {showAll && <div className={styles.allTipsContainer}>
             <Reference href="/TODO">
                 <Typo
                     as="span"
@@ -45,7 +34,7 @@ const TipsSection = ({className}: StyledProps) => (
                     Смотреть все
                 </Typo>
             </Reference>
-        </div>
+        </div>}
     </>
 );
 
