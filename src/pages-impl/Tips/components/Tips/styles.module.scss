@@ -12,8 +12,6 @@
     }
 }
 
-@media all and (max-width: $screen_md) {
-    .tip + .tip {
-        margin-top: $pad6;
-    }
+.tip {
+    margin-top: $pad6;
 }
