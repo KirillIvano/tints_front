@@ -1,0 +1,47 @@
+@import "~vars/colors";
+@import "~vars/pads";
+@import "~vars/fonts";
+
+.catalogBanner {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: $pad10 0;
+
+    background: $firm;
+
+    .decorativeBackground {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        background: pink;
+        clip-path: polygon(0% 0%, 20% 0%, 40% 100%, 0% 100%);
+    }
+
+    .catalogButton {
+        z-index: 1;
+
+        padding: $pad4 $pad10;
+        width: max-content;
+
+        transition: background-color 0.3s ease-in-out;
+
+        border: 4px solid $white;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .catalogButton:focus,
+    .catalogButton:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .catalogButton:active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

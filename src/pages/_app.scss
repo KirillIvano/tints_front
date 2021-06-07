@@ -22,6 +22,14 @@ button {
     border: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: initial;
+}
+
 label {
     cursor: pointer;
 }
