@@ -14,35 +14,35 @@ const Tips = ({className}: StyledProps) => (
                 <ArticlePreview
                     caption="Наша история"
                     href="/TODO"
-                    image="/about/history.png"
+                    image="/about-us/history.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Наш бизнес"
                     href="/TODO"
-                    image="/about/business.png"
+                    image="/about-us/business.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Наш ассортимент"
                     href="/TODO"
-                    image="/about/assortment.png"
+                    image="/about-us/assortment.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Наша палитра"
                     href="/TODO"
-                    image="/about/palette.png"
+                    image="/about-us/palette.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Наша этика"
                     href="/TODO"
-                    image="/about/ethics.png"
+                    image="/about-us/ethics.png"
                 />
             </div>
         </div>

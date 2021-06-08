@@ -10,7 +10,7 @@ const AboutPage = () => (
         <Typo
             as="h1"
             color="black"
-            size="xxxl"
+            size="xxl"
             weight="normal"
         >
             О нас
@@ -19,9 +19,9 @@ const AboutPage = () => (
         <div className={styles.subtitle}>
             <Typo
                 as="p"
-                color="black"
-                size="md"
-                weight={300}
+                color="dark-gray"
+                size="sm"
+                weight='normal'
             >
                 В Tints of Nature мы все занимаемся созданием естественного здорового оттенка волос и средств по уходу за ними. 
                 Вот уже более 20 лет мы увлечены производством высококачественной продукции, которая будет не только доступна 
