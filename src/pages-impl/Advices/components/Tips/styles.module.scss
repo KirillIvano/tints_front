@@ -12,6 +12,12 @@
     }
 }
 
-.tip {
+.tip:nth-child(n+4) {
     margin-top: $pad6;
+}
+
+@media all and (max-width: $screen_md) {
+    .tip:nth-child(n+2) {
+        margin-top: $pad6;
+    }
 }
