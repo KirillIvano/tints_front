@@ -2,19 +2,21 @@ import React from 'react';
 
 import {Box} from '@/uikit';
 
-import {CatalogBanner, TipsSection} from './components';
+import {CatalogBanner, TipsSection, Testimonials} from './components';
 import styles from './styles.module.scss';
 
 const MainPage = () => (
     <>
-        <section>
-            <CatalogBanner />
-        </section>
+        <CatalogBanner />
+        {/*
+        <Box >
+            <div className={styles.main__tips}>
+                <TipsSection />
+            </div>
+        </Box> */}
 
         <Box>
-            <section className={styles.main__tips}>
-                <TipsSection />
-            </section>
+            <Testimonials />
         </Box>
     </>
 );

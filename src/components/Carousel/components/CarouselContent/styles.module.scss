@@ -1,0 +1,14 @@
+.carouselContentWrapper {
+    will-change: transform;
+    transition: transform 0.5s;
+
+    cursor: pointer;
+}
+
+.carouselContentWrapper.dragged {
+    transition: none;
+
+    .carouselContent {
+        pointer-events: none;
+    }
+}
