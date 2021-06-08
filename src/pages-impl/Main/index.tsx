@@ -7,8 +7,6 @@ import styles from './styles.module.scss';
 
 const MainPage = () => (
     <Box className={styles.main}>
-        asdasdgasdgasdg
-
         <section className={styles.main__tips}>
             <TipsSection />
         </section>
