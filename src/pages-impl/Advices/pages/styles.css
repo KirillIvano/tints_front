@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+.container {
+    /* padding: 0 20px;
+    max-width: 1280px; */
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: #91b2b4;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+}
+
+h2, h3, p, span, b {
+    margin-bottom: 1rem;
+    line-height: 1.43;
+}
+
+.top__header p {
+    text-align: center;
+}
+
+a {
+    /* text-decoration: none; */
+    color: inherit;
+}
+
+a:hover {
+    color: #7db4b6;
+    text-decoration: underline;
+}
+
+span {
+    color: #91b2b4;
+    font-weight: 500;
+}
+
+b {
+    font-weight: 500;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: column-reverse;
+}
+
+.box__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+@media all and (min-width: 640px) {
+    .box { width: 540px }
+}
+
+@media all and (min-width: 768px) {
+    .box { 
+        width: 720px; 
+        flex-wrap: nowrap; 
+    }
+
+    .box__item {
+        width: 49%;
+    }
+
+    .reverse {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .box { width: 960px }
+}
+
+@media all and (min-width: 1280px) {
+    .box { width: 1140px }
+}
+
+
+
+/* Light */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'),
+         url('./fonts/Helvetica-Light.ttf') format('truetype'),
+         url('./fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Helvetica-Light.woff') format('woff'); 
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Regular */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'),
+         url('./fonts/Helvetica-Regular.ttf') format('truetype'),
+         url('./fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Helvetica-Regular.woff') format('woff'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Medium */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'),
+         url('./fonts/Helvetica-Medium.ttf') format('truetype'),
+         url('./fonts/Helvetica-Medium.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Helvetica-Medium.woff') format('woff'); 
+    font-weight: 500;
+    font-style: normal;
+}
