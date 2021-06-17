@@ -3,9 +3,9 @@ import cn from 'classnames';
 
 import {ArticlePreview} from '@/components';
 import {StyledProps} from '@/util/types';
+import {Reference, Typo} from '@/uikit';
 
 import styles from './styles.module.scss';
-import {Reference, Typo} from '@/uikit';
 
 
 const TipsSection = ({className}: StyledProps) => (
