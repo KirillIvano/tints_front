@@ -3,10 +3,11 @@ import React from 'react';
 import {Reference, Typo} from '@/uikit';
 
 import {formatTestimonialDate} from './utils/formatTestimonialDate';
+import css from './styles.module.scss';
 
 
 export type TestimonialProps = {
-    date: Date,
+    date: number,
     heading: string;
     advantages: string;
     disadvantages: string;
@@ -25,7 +26,7 @@ const Testimonial = ({
     const formattedDate = formatTestimonialDate(date);
 
     return (
-        <div>
+        <div className={css.testimonial}>
             <Typo
                 as="p"
                 color="dark-gray"
@@ -37,21 +38,34 @@ const Testimonial = ({
                 as="h3"
                 color="black"
                 weight="bold"
+                className={css.heading}
             >
                 {heading}
             </Typo>
 
             {advantages && (
-                <Typo as="p">{advantages}</Typo>
+                <Typo size="xs" as="p">
+                    <Typo className={css.attitudeSign} as="span">+</Typo>{advantages}
+                </Typo>
             )}
             {disadvantages && (
-                <Typo as="p">{disadvantages}</Typo>
+                <Typo size="xs" as="p">
+                    <Typo className={css.attitudeSign} as="span">-</Typo>{disadvantages}
+                </Typo>
             )}
             {description && (
-                <Typo as="p">{description}</Typo>
+                <Typo className={css.description} as="p">
+                    {description}
+                </Typo>
             )}
 
-            {link && <Reference href={link}>Читать отзыв на сайте</Reference>}
+            {link && (
+                <Typo size="xs" as="p" className={css.link}>
+                    <Reference href={link}>
+                        Читать отзыв на сайте
+                    </Reference>
+                </Typo>
+            )}
         </div>
     );
 };

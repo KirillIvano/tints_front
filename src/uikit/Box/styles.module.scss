@@ -1,11 +1,11 @@
 @import "~vars/screen";
 
 .grid {
-    width: auto;
+    width: 100%;
     margin: 0 auto;
 
     padding-left: 8px;
-    padding-right: 8px
+    padding-right: 8px;
 }
 
 @media all and (min-width: $screen_sm) {

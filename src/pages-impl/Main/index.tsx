@@ -8,6 +8,7 @@ import styles from './styles.module.scss';
 const MainPage = () => (
     <>
         <CatalogBanner />
+
         <Box className={styles.main}>
             <section className={styles.main__tips}>
                 <TipsSection />

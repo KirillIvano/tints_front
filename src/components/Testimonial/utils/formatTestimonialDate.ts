@@ -1,4 +1,4 @@
 import {format} from 'date-fns';
 
-export const formatTestimonialDate = (date: Date) =>
-    format(date, 'dd.mm.yyyy');
+export const formatTestimonialDate = (date: number) =>
+    format(date, 'dd.MM.yyyy');

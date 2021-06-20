@@ -2,10 +2,12 @@ import 'reflect-metadata';
 import 'focus-visible';
 import 'flexboxgrid2';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import {AppProps} from 'next/app';
 
-import {useAppInit} from '@/hooks/useAppInit';
-import {Header, Footer} from '@/parts';
+import {Footer} from '@/parts';
 
 import './_app.scss';
 

@@ -1,7 +1,10 @@
 import React, {SyntheticEvent} from 'react';
 import {useRouter} from 'next/router';
+import cn from 'classnames';
 
 import {StyledProps} from '@/util/types';
+
+import css from './styles.module.scss';
 
 
 export type ReferenceProps = StyledProps<{
@@ -23,7 +26,7 @@ const Reference = ({href, children, className}: ReferenceProps) => {
             href={href}
             onClick={onAction}
             onKeyDown={e => e.key === ' ' && onAction(e)}
-            className={className}
+            className={cn(css.reference, className)}
         >
             {children}
         </a>
