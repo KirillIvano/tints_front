@@ -1,0 +1,38 @@
+@import "~vars/pads";
+
+.main {
+    display: flex;
+    margin: $pad10 auto;
+
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+.feedback {
+    width: 285px;
+}
+
+.input {
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &::placeholder {
+        color: #e4e4e4;
+    }
+}
+
+.contacts {
+    margin-left: 100px;
+
+    .contact {
+        margin-bottom: 20px;    
+        
+        .icon {
+            margin-right: 20px;
+        }
+    }    
+
+
+}
