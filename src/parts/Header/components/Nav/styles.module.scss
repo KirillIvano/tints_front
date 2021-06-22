@@ -1,3 +1,31 @@
-.nav {
+@import "~vars/pads";
+@import "~vars/colors";
+@import "~vars/fonts";
 
+.nav {
+    .nav__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        .nav__item {
+            padding: $pad2;
+
+            .nav__itemText {
+                font-size: $font_xs;
+                color: $black;
+                transition: color 0.3s ease-in-out;
+
+                &:focus,
+                &:hover {
+                    color: $firm_blue;
+                }
+
+                &.selected {
+                    color: $firm;
+                }
+            }
+        }
+    }
 }

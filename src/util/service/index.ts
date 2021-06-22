@@ -27,7 +27,7 @@ export class Resource<
 
     public async makeRequest(
         url: string,
-        options: RequestInit,
+        options?: RequestInit,
     ): Promise<ResponseType<TResponse>> {
         const {shouldBatch, shouldCache} = this.options;
         const requestHash = this.getRequestHash(url, options);
@@ -51,7 +51,7 @@ export class Resource<
         return result;
     }
 
-    private getRequestHash(url: string, options: RequestInit) {
+    private getRequestHash(url: string, options?: RequestInit) {
         return `${url}|${JSON.stringify(options)}`;
     }
 }

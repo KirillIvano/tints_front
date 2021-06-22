@@ -1,8 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
+import {useRouter} from 'next/router';
+import {observer} from 'mobx-react-lite';
+import cn from 'classnames';
 
-import styles from './styles.module.scss';
 import {useCartStore} from '@/domain/cart/hooks';
+import {Reference} from '@/uikit';
+import {StyledProps} from '@/util/types';
+
+import css from './styles.module.scss';
 
 
 type NavItemProps = {
@@ -12,33 +16,46 @@ type NavItemProps = {
 const NavItem = ({
     href,
     children,
-}: NavItemProps) => (
-    <li>
-        <Link href={href}>
-            {children}
-        </Link>
-    </li>
-);
+}: NavItemProps) => {
+    const {pathname} = useRouter();
 
-const CartItem = () => {
+    return (
+        <li className={css.nav__item}>
+            <Reference
+                className={cn(
+                    css.nav__itemText,
+                    {[css.selected]: pathname === href},
+                )}
+                href={href}
+            >
+                {children}
+            </Reference>
+        </li>
+    );
+};
+
+const CartItem = observer(() => {
     const cartStore = useCartStore();
     const itemsCnt = cartStore.itemsCount;
 
     return (
         <NavItem href="/cart">Корзина ({itemsCnt})</NavItem>
     );
-};
+});
 
-const Nav = () => (
-    <nav>
-        <ul>
-            <NavItem href="/shop">Магазин</NavItem>
-            <NavItem href="/shop">О нас</NavItem>
-            <NavItem href="/shop">Полезные советы</NavItem>
-            <NavItem href="/shop">Контакты</NavItem>
-            <CartItem />
-        </ul>
-    </nav>
-);
+const Nav = ({className}: StyledProps) => {
+
+    return (
+        <nav className={cn(css.nav, className)}>
+            <ul className={css.nav__list}>
+                <NavItem href="/catalog">Магазин</NavItem>
+                <NavItem href="/about-us">О нас</NavItem>
+                <NavItem href="/faqs">Полезные советы</NavItem>
+                <NavItem href="/contacts">Контакты</NavItem>
+                <CartItem />
+            </ul>
+        </nav>
+    );
+};
 
 export default Nav;

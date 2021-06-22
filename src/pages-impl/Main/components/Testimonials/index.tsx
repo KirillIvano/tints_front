@@ -23,11 +23,9 @@ const TESTIMONIALS_SLIDER_SETTINGS = {
 };
 
 const TEST_PROPS: ComponentProps<typeof Testimonial> = {
-    date: Date.now(),
-    heading: 'Не вредит волосам, закрашивает седину на 100% и очень-очень стойкая!',
-    advantages: '100% закрашивает седину Без аммиака Блеск Богатая палитра цветов Здоровые волосы Красивый цвет',
-    disadvantages: 'нет',
-    link: 'asdasasd',
+    date: '2021-06-07',
+    title: 'Не вредит волосам, закрашивает седину на 100% и очень-очень стойкая!',
+    url: 'asdasasd',
     description: 'Доброго времени суток!!!\nОкрашивание волос для меня – это не просто праздное развлечение',
 };
 

@@ -48,17 +48,4 @@ label {
 .app {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
-
-    .app__content {
-        .app__header {
-
-        }
-
-        .app__body {
-
-        }
-    }
-
-    .app__footer {
-    }
 }

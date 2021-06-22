@@ -8,6 +8,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import {AppProps} from 'next/app';
 
 import {Footer} from '@/parts';
+import {useAppInit} from '@/hooks/useAppInit';
+import {Header} from '@/parts';
 
 import './_app.scss';
 
@@ -16,9 +18,11 @@ const App = ({
     Component,
     pageProps,
 }: AppProps) => {
+    useAppInit(pageProps);
+
     return (
         <div className="app" id="root">
-            {/* <Header /> */}
+            <Header />
 
             <main>
                 <Component {...pageProps} />

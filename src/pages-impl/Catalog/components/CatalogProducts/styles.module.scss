@@ -1,0 +1,9 @@
+@import "~vars/pads";
+
+.products {
+    .product {
+        &:nth-child(n + 4) {
+            margin-top: $pad8;
+        }
+    }
+}

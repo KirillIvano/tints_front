@@ -81,5 +81,6 @@ export type Category = {
 
 export type Shade = {
     id: number;
+	name: string;
     image: string;
 }
