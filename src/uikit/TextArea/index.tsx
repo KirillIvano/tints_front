@@ -1,5 +1,5 @@
 import React, {
-    InputHTMLAttributes,
+    TextareaHTMLAttributes,
     Ref,
     useMemo,
 } from 'react';
@@ -15,12 +15,12 @@ export type CommonProps = {
     labelClass?: string;
 }
 
-export type TextInputProps = CommonProps & {
-    $ref?: Ref<HTMLInputElement>;
+export type TextAreaProps = CommonProps & {
+    $ref?: Ref<HTMLTextAreaElement>;
     wrapperClass?: string;
-} & InputHTMLAttributes<HTMLInputElement>;
+} & TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export const TextInput = ({
+export const TextArea = ({
     labelText,
     id,
     placeholder,
@@ -31,24 +31,24 @@ export const TextInput = ({
     className,
 
     ...props
-}: TextInputProps) => {
-    const inputId = useMemo(() => id ? id : getUniqueId(), [id]);
+}: TextAreaProps) => {
+    const textAreaId = useMemo(() => id ? id : getUniqueId(), [id]);
 
     return (
-        <div className={cn(css.inputWrapper, wrapperClass)}>
+        <div className={cn(css.textAreaWrapper, wrapperClass)}>
             <label
                 className={cn(css.label, labelClass)}
-                htmlFor={inputId}
+                htmlFor={textAreaId}
             >
                 {labelText}
             </label>
 
-            <input
+            <textarea
                 {...props}
                 ref={$ref}
-                className={cn(css.input, className)}
+                className={cn(css.textarea, className)}
                 placeholder={placeholder}
-                id={inputId}
+                id={textAreaId}
             />
         </div>
     );

@@ -1,0 +1,30 @@
+@import '~vars/pads';
+@import '~vars/fonts';
+@import '~vars/colors';
+
+.textAreaWrapper {
+    .label {
+        color: $dark_gray;
+        font-size: $font_xs;
+    }
+
+    .textarea {
+        width: 100%;
+        display: block;
+
+        margin-top: $pad1;
+        padding: $pad2 $pad4;
+
+        border: 2px solid $light_gray;
+        border-radius: 5px;
+
+        font-size: $font_sm;
+        color: $black;
+
+        resize: none;
+    }
+
+    .textarea::placeholder {
+        color: $light_gray;
+    }
+}

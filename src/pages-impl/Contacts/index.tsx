@@ -1,121 +1,108 @@
 import React from 'react';
+import cn from 'classnames';
 
-import {Box, Typo, Input, Reference} from '@/uikit';
+import {Box, Typo, TextInput, Reference} from '@/uikit';
 
-import styles from './styles.module.scss';
 import Button from '@/uikit/Button';
 
+import styles from './styles.module.scss';
+import {TextArea} from '@/uikit/TextArea';
+
 const AdvicePage = () => (
-    <Box className={styles.main}>
-        <div className={styles.feedback}>
-            <Typo
-                as="h2"
-                color="black"
-                size="xl"
-                weight="normal"
-            >
+    <Box>
+        <div className={cn(styles.main, 'row')}>
+            <div className={cn('col-xs-12 col-md-4 col-lg-3', styles.feedback)}>
+                <Typo
+                    as="h2"
+                    color="black"
+                    size="xl"
+                    weight="normal"
+                >
                 Обратная связь
-            </Typo>
+                </Typo>
 
-            <Typo
-                as="p"
-                color="black"
-                size="xs"
-                weight="normal"
-            >
-                Контакт
-            </Typo>
-            <Input
-                sizing='lg'
-                className={styles.input}
-                placeholder='Телефон или почта'
-            />
+                <TextInput
+                    labelText='Контакт'
+                    placeholder='Телефон или почта'
+                    className={styles.input}
+                />
 
-            <Typo
-                as="p"
-                color="black"
-                size="xs"
-                weight="normal"
-            >
-                Текст сообщения
-            </Typo>
-            <Input
-                sizing='lg'
-                className={styles.input}
-                placeholder='Чем мы можем помочь'
-                multiline
-            />
+                <TextArea
+                    labelText='Текст сообщения'
+                    placeholder='Чем мы можем помочь'
+                    className={styles.input}
+                />
 
-            <Button>Отправить</Button>
-        </div>
-        <div className={styles.contacts}>
-            <Typo
-                as="h2"
-                color="black"
-                size="xl"
-                weight="normal"
-            >
+                <Button>Отправить</Button>
+            </div>
+            <div className='col-xs-12 col-md-7 col-lg-8'>
+                <Typo
+                    as="h2"
+                    color="black"
+                    size="xl"
+                    weight="normal"
+                >
                 Контакты
-            </Typo>
+                </Typo>
 
-            <div className={styles.contact}>
-                <Typo
-                    as="span"
-                    size="xl"
-                    className={styles.icon}
-                >
+                <div className={styles.contact}>
+                    <Typo
+                        as="span"
+                        size="xl"
+                        className={styles.icon}
+                    >
                     📞
-                </Typo>
-                <Reference href='tel:+79993602525'>
-                    <Typo
-                        as="span"
-                        color="black"
-                        size="xl"
-                    >
+                    </Typo>
+                    <Reference href='tel:+79993602525'>
+                        <Typo
+                            as="span"
+                            color="black"
+                            size="xl"
+                        >
                         +79993602525
-                    </Typo>
-                </Reference>
-            </div>
+                        </Typo>
+                    </Reference>
+                </div>
 
-            <div className={styles.contact}>
-                <Typo
-                    as="span"
-                    size="xl"
-                    className={styles.icon}
-                >
+                <div className={styles.contact}>
+                    <Typo
+                        as="span"
+                        size="xl"
+                        className={styles.icon}
+                    >
                     📧
-                </Typo>
-                <Reference href='mailto:info@tints.ru'>
-                    <Typo
-                        as="span"
-                        color="black"
-                        size="xl"
-                    >
+                    </Typo>
+                    <Reference href='mailto:info@tints.ru'>
+                        <Typo
+                            as="span"
+                            color="black"
+                            size="xl"
+                        >
                         info@tints.ru
-                    </Typo>
-                </Reference>
-            </div>
+                        </Typo>
+                    </Reference>
+                </div>
 
-            <div className={styles.contact}>
-                <Typo
-                    as="span"
-                    size="xl"
-                    className={styles.icon}
-                >
-                    🗺
-                </Typo>
-                <Reference href='mailto:info@tints.ru'>
+                <div className={styles.contact}>
                     <Typo
                         as="span"
-                        color="black"
                         size="xl"
+                        className={styles.icon}
                     >
-                        110235 Москва, ул. Пушкина 18, оф. 200
+                    🗺
                     </Typo>
-                </Reference>
+                    <Reference href='mailto:info@tints.ru'>
+                        <Typo
+                            as="span"
+                            color="black"
+                            size="xl"
+                        >
+                        110235 Москва, ул. Пушкина 18, оф. 200
+                        </Typo>
+                    </Reference>
+                </div>
+
             </div>
-
-
         </div>
     </Box>
 );

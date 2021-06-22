@@ -2,6 +2,7 @@
 
 .main {
     display: flex;
+    justify-content: space-between;
     margin: $pad10 auto;
 
     h2 {
@@ -11,28 +12,18 @@
 
 .feedback {
     width: 285px;
-}
 
-.input {
-    border: 1px solid #F1F1F1;
-    border-radius: 5px;
-    margin-bottom: 15px;
-
-    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &::placeholder {
-        color: #e4e4e4;
+    .input {
+        margin-bottom: 15px;
     }
 }
 
 .contacts {
-    margin-left: 100px;
-
     .contact {
-        margin-bottom: 20px;    
-        
-        .icon {
-            margin-right: 20px;
-        }
-    }    
+        margin-bottom: 20px;
+    }
+}
 
-
+.icon {
+    margin-right: 20px;
 }
