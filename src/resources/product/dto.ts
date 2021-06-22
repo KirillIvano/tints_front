@@ -11,5 +11,6 @@ export type CategoryDto = {
 
 export type ShadeDto = {
     id: number;
+    name: string;
     image: string;
 }

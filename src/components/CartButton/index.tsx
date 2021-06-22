@@ -13,7 +13,8 @@ export type CartButtonProps = StyledProps<{
 
 const CartNumberInput = observer(({
     productId,
-}: {productId: number}) => {
+    className,
+}: StyledProps<{productId: number}>) => {
     const cart = useCartStore();
     const cartItem = useCartItemSafe(productId);
     const {productsCount} = cartItem;
@@ -42,6 +43,7 @@ const CartNumberInput = observer(({
             handleDec={handleDec}
             handleChange={handleChange}
             onBlur={handleBlur}
+            wrapperClass={className}
         />
     );
 });
@@ -59,7 +61,10 @@ const CartButton = observer(({
     };
 
     return isInCart ? (
-        <CartNumberInput productId={productId} />
+        <CartNumberInput
+            className={className}
+            productId={productId}
+        />
     ) : (
         <Button
             className={className}
