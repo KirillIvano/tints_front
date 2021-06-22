@@ -1,0 +1,28 @@
+@import '~vars/pads';
+@import '~vars/fonts';
+@import '~vars/colors';
+
+.inputWrapper {
+    .label {
+        color: $dark_gray;
+        font-size: $font_xs;
+    }
+
+    .input {
+        width: 100%;
+        display: block;
+
+        margin-top: $pad1;
+        padding: $pad2 $pad4;
+
+        border: 2px solid $light_gray;
+        border-radius: 5px;
+
+        font-size: $font_sm;
+        color: $black;
+    }
+
+    .input::placeholder {
+        color: $light_gray;
+    }
+}

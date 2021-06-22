@@ -1,0 +1,32 @@
+{
+    "categories": [{
+        "id": 1,
+        "name": "Шампуни",
+        "translit": "shampoo",
+        "sku": [{
+            "id": 1,
+            "price": 100.0,
+            "weight": 500,
+            "productId": 1,
+            "categoryId": 1,
+            "name": "Шампунька",
+            "translit": "shampoonka",
+            "oldPrice": 150.0,
+            "vendorCode": "shampoonka_001",
+            "shadeId": 1,
+            "image": "/static/img/c5d653f9b1b63553f055243b09f7f9df.jpg"
+        }, {
+            "id": 2,
+            "price": 100.0,
+            "weight": 200,
+            "productId": 1,
+            "categoryId": 1,
+            "name": "Шампунька",
+            "translit": "shampoonka",
+            "oldPrice": 200.0,
+            "vendorCode": "shampoonka_002",
+            "shadeId": 1,
+            "image": "/static/img/92c81f2aedaac80c8bade4ecd4ba1909.png"
+        }]
+    }]
+}

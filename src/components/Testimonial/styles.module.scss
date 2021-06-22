@@ -1,0 +1,41 @@
+@import '~vars/pads';
+@import '~vars/fonts';
+@import '~vars/colors';
+
+.testimonial {
+    padding: $pad4;
+
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .heading {
+        margin-top: $pad2;
+    }
+
+    .attitudeSign {
+        margin: $pad1;
+
+        font-size: $font_md;
+        font-weight: bold;
+    }
+
+    .advantages {
+        vertical-align: center;
+
+        margin-top: $pad1;
+    }
+
+    .disadvantages {
+        margin-top: $pad1;
+    }
+
+    .description {
+        margin-top: $pad1;
+    }
+
+    .link {
+        margin-top: $pad2;
+
+        color: $firm;
+    }
+}

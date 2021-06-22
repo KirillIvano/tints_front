@@ -1,0 +1,26 @@
+@import "~vars/pads";
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    .cardContent {
+        flex: 1 1 auto;
+
+        padding-bottom: $pad4;
+
+        .productPrice {
+            margin-top: $pad2;
+        }
+
+        .productName {
+            margin-top: $pad2;
+        }
+    }
+
+    .buttonWrapper {
+        flex: 0 0 40px;
+    }
+}

@@ -1,0 +1,10 @@
+@import "~vars/pads";
+@import "~vars/screen";
+
+.carousel {
+    padding-bottom: 30px;
+
+    :global(.slick-slide) {
+        padding: $pad4;
+    }
+}

@@ -8,6 +8,9 @@
     padding: 0;
     font-family: inherit;
     box-sizing: border-box;
+
+    min-height: 0;
+    min-width: 0;
 }
 
 body {
@@ -20,6 +23,14 @@ li {
 
 button {
     border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: initial;
 }
 
 label {
@@ -37,17 +48,4 @@ label {
 .app {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
-
-    .app__content {
-        .app__header {
-
-        }
-
-        .app__body {
-
-        }
-    }
-
-    .app__footer {
-    }
 }

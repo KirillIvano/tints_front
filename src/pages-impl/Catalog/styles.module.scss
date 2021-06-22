@@ -1,0 +1,15 @@
+@import "~vars/pads";
+
+.filters {
+    .shadeSelect {
+        margin-top: $pad4;
+    }
+
+    .categorySelect {
+        margin-top: $pad6;
+    }
+}
+
+.catalog {
+    padding-bottom: $pad12;
+}
