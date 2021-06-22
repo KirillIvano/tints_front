@@ -13,7 +13,7 @@ const CatalogEmpty = () => {
 
     return (
         <div className={css.catalogEmpty}>
-            <Typo size="lg" color="black">
+            <Typo size="lg" color="black" className={css.catalogText}>
                 По вашему запросу ничего не найдено, попробуйте поменять фильтры
             </Typo>
 

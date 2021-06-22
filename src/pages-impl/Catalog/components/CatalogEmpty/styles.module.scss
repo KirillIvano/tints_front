@@ -1,4 +1,6 @@
 @import "~vars/pads";
+@import "~vars/screen";
+@import "~vars/fonts";
 
 .catalogEmpty {
     display: flex;
@@ -10,5 +12,13 @@
 
     .buttonContainer {
         margin-top: $pad4;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .catalogEmpty {
+        .catalogText {
+            font-size: $font_sm;
+        }
     }
 }
