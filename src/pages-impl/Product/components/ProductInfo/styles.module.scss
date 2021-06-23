@@ -1,0 +1,22 @@
+@import "~vars/pads";
+
+.productInfo {
+    padding-top: $pad8;
+
+    .price {
+        margin-top: $pad4;
+    }
+
+    .cartButton {
+        margin-top: $pad8;
+    }
+
+    .descriptionTitle {
+        margin-top: $pad6;
+    }
+
+    .description {
+        margin-top: $pad1;
+        line-height: 1.4;
+    }
+}

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {InputHTMLAttributes} from 'react';
 import classnames from 'classnames';
 
 import styles from './styles.module.scss';
 
-interface NumberInputProps {
+interface NumberInputProps extends InputHTMLAttributes<HTMLInputElement> {
     handleChange: (val: string) => void;
     handleDec: () => void;
     handleInc: () => void;
 
-    value: string;
+    value: string | number;
 
     wrapperClass?: string;
     className?: string;

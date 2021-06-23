@@ -4,27 +4,27 @@
 
 .numberInputWrapper {
     position: relative;
+    display: flex;
 
-    width: 160px;
-    padding: 2px 40px;
-    background: $dark_gray;
+    width: 100%;
+
+    background: $black;
 
     .leftControl,
     .rightControl {
-        position: absolute;
+        flex: 0 0 40px;
 
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
 
         width: 40px;
-        height: 100%;
 
         top: 0;
 
         font-size: $font_lg;
         border: none;
-        background-color: $dark_gray;
+        background-color: $light_gray;
 
         transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 
@@ -32,7 +32,7 @@
 
         &:hover,
         &:focus {
-            background-color: darken($dark_gray, 8);
+            background-color: darken($light_gray, 8);
         }
 
         &:focus {
@@ -44,27 +44,25 @@
         }
     }
 
-    .leftControl {
-        left: 0;
-    }
-
-    .rightControl {
-        right: 0;
-    }
-
     .numberInput {
+        flex: 1 1 auto;
+
         display: block;
-        appearance: none;
+        appearance: textfield;
 
         border: none;
         padding: $pad3;
-        width: 100%;
 
         text-align: center;
         background: white;
+
+        &[type="number"]::-webkit-outer-spin-button,
+        &[type="number"]::-webkit-inner-spin-button {
+            display: none;
+        }
     }
 
     .numberInput:focus {
-        outline: none;
+        outline: $dark_gray;
     }
 }

@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 export type TypoFontSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 export type TypoColor = 'black' | 'dark-gray' | 'white';
-export type TypoTag = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span';
+export type TypoTag = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span' | 'pre';
 
 export type TypographyProps = StyledProps<{
     children: React.ReactNode;

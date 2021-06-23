@@ -15,21 +15,21 @@ const TipsSection = ({className}: StyledProps) => (
                 <ArticlePreview
                     caption="Советы по перманентным краскам"
                     href="/TODO"
-                    image="/main/permanentPaints.png"
+                    image="/faqs/permanentPaints.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Советы по использованию Henna Cream"
                     href="/TODO"
-                    image="/main/hennaCream.png"
+                    image="/faqs/hennaCream.png"
                 />
             </div>
             <div className={cn('col-xs-12 col-md-4', styles.tip)}>
                 <ArticlePreview
                     caption="Советы по окрашиванию светлых волос"
                     href="/TODO"
-                    image="/main/lightHair.png"
+                    image="/faqs/lightHair.png"
                 />
             </div>
         </div>

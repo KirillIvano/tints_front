@@ -1,0 +1,42 @@
+@import "~vars/pads";
+@import "~vars/util";
+@import "~vars/colors";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.category {
+    display: block;
+
+    & + & {
+        margin-top: $pad1;
+    }
+
+    .category__input {
+        appearance: none;
+
+        @extend .visually-hidden;
+    }
+
+    .category__name {
+        color: $black;
+
+        transition: color 0.3s ease-in-out;
+    }
+
+    .category__input:focus ~ .category__name,
+    .category__input:hover ~ .category__name, {
+        color: $firm_blue;
+    }
+
+    .category__input:checked ~ .category__name {
+        color: $firm;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .category {
+        .category__name {
+            font-size: $font_sm;
+        }
+    }
+}

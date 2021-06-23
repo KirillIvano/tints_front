@@ -1,0 +1,10 @@
+@import "~vars/pads";
+
+.productPage {
+    padding-bottom: $pad8;
+    padding-top: $pad8;
+
+    .description {
+        margin-top: $pad8;
+    }
+}

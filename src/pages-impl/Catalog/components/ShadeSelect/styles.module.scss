@@ -1,0 +1,77 @@
+@import "~vars/pads";
+@import "~vars/util";
+@import "~vars/colors";
+@import "~vars/screen";
+
+.shadeSelect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shade {
+    position: relative;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    margin-top: $pad2;
+    margin-right: $pad2;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    .shade__input {
+        appearance: none;
+
+        @extend .visually-hidden;
+    }
+
+    .shade__img {
+        width: 100%;
+    }
+
+    .shade__indent {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        border-radius: 50%;
+        border: 2px solid $light_gray;
+
+        background: transparent;
+
+        &::after {
+            content: "";
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+    }
+
+    .shade__input:checked ~ .shade__indent {
+        border-color: $firm_blue;
+    }
+}
+
+.shade.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: $screen_md) {
+    .shade {
+        width: 50px;
+        height: 50px;
+    }
+}

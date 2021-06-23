@@ -1,0 +1,24 @@
+@import "~vars/pads";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.catalogEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: $pad10 $pad8;
+
+    .buttonContainer {
+        margin-top: $pad4;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .catalogEmpty {
+        .catalogText {
+            font-size: $font_sm;
+        }
+    }
+}

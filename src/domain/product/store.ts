@@ -3,19 +3,21 @@ import {computed, observable} from 'mobx';
 
 import {IProductStore} from '@/di/interfaces/IProductStore';
 
-import {Product, ProductPreview} from './types';
+import {CategoryPreview, ProductPreview, Sku} from './types';
 
 
 @injectable()
 export class ProductStore implements IProductStore {
     @observable
-    private _products = new Map<number, Product>();
+    private _skus = new Map<number, Sku>();
     @observable.ref
     private _productPreviews: ProductPreview[] = [];
+    @observable
+    private _categories = new Map<number, CategoryPreview>();
 
     @computed
-    get products() {
-        return this._products.values();
+    get skus() {
+        return [...this._skus.values()];
     }
 
     @computed
@@ -23,14 +25,24 @@ export class ProductStore implements IProductStore {
         return [...this._productPreviews];
     }
 
-    getProductById = (id: number) =>
-        this._products.get(id);
+    @computed
+    get productCategories(): CategoryPreview[] {
+        return [...this._categories.values()];
+    }
+
+    getSkuById = (id: number) =>
+        this._skus.get(id);
 
     hydratePreviews(previews: ProductPreview[]) {
         this._productPreviews = [...previews];
     }
-    hydrateProduct(product: Product) {
-        this._products.set(product.id, product);
+
+    hydrateSku(product: Sku) {
+        this._skus.set(product.id, product);
+    }
+
+    hydrateCategories(categories: CategoryPreview[]) {
+        categories.map(category => this._categories.set(category.id, category));
     }
 }
 

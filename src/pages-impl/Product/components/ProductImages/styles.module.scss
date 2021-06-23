@@ -1,0 +1,45 @@
+@import "~vars/colors";
+@import "~vars/pads";
+@import "~vars/screen";
+
+.container {
+    padding: 0 $pad8;
+    padding-bottom: $pad8;
+}
+
+.slides {
+    position: relative;
+
+    :global(.slick-slide) {
+        padding: $pad12;
+    }
+
+    :global(.slick-prev),
+    :global(.slick-next) {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+
+        color: $dark_gray;
+
+        &::before {
+            color: $black;
+        }
+    }
+
+    :global(.slick-prev) {
+        left: 5%;
+    }
+
+    :global(.slick-next) {
+        right: 5%;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .slides {
+        :global(.slick-slide) {
+            padding: $pad6;
+        }
+    }
+}

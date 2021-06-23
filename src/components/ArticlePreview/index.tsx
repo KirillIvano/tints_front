@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 
 import {Typo, Reference} from '@/uikit';
 
@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 
 export type ArticlePreviewProps = {
-    caption: string;
+    caption: ReactNode;
     image: string;
     href: string;
 }

@@ -1,0 +1,50 @@
+@import "~vars/pads";
+@import "~vars/colors";
+
+.toggler {
+    position: relative;
+
+    padding-left: $pad4;
+
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        width: 0;
+        height: 0;
+
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
+
+        border-left: 8px solid $light_gray;
+        border-bottom: 6px solid transparent;
+        border-top: 6px solid transparent;
+
+        transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+}
+
+.content {
+    margin-top: $pad2;
+
+    overflow: hidden;
+    max-height: 0;
+
+    transition: max-height 0.3s;
+}
+
+.selected {
+    .toggler {
+        &::after {
+            border-left-color: $firm;
+            transform: rotate(90deg);
+        }
+    }
+
+    .content {
+        max-height: 1000px;
+    }
+}

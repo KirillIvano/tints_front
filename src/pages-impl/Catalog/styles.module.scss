@@ -1,0 +1,22 @@
+@import "~vars/pads";
+@import "~vars/screen";
+
+.filters {
+    .shadeSelect {
+        margin-top: $pad4;
+    }
+
+    .categorySelect {
+        margin-top: $pad6;
+    }
+}
+
+.catalog {
+    padding-bottom: $pad12;
+}
+
+@media all and (max-width: $screen_md) {
+    .products {
+        margin-top: $pad8;
+    }
+}
