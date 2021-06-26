@@ -6,10 +6,10 @@ import {Box, Typo, TextInput, Reference} from '@/uikit';
 import Button from '@/uikit/Button';
 
 import styles from './styles.module.scss';
-import {TextArea} from '@/uikit/TextArea';
+import {TextArea} from '@/uikit/TextInput';
 
 const AdvicePage = () => (
-    <Box>
+    <Box className={styles.container}>
         <div className={cn(styles.main, 'row')}>
             <div className={cn('col-xs-12 col-md-4 col-lg-3', styles.feedback)}>
                 <Typo
@@ -35,7 +35,7 @@ const AdvicePage = () => (
 
                 <Button>Отправить</Button>
             </div>
-            <div className='col-xs-12 col-md-7 col-lg-8'>
+            <div className={cn('col-xs-12 col-md-7 col-lg-8 col-md-offset-1', styles.contacts)}>
                 <Typo
                     as="h2"
                     color="black"
@@ -46,37 +46,33 @@ const AdvicePage = () => (
                 </Typo>
 
                 <div className={styles.contact}>
-                    <Typo
-                        as="span"
-                        size="xl"
+                    <img
+                        src="/icons/phone.jpg"
                         className={styles.icon}
-                    >
-                    📞
-                    </Typo>
+                    />
                     <Reference href='tel:+79993602525'>
                         <Typo
                             as="span"
                             color="black"
-                            size="xl"
+                            size="xxl"
+                            className={styles.contact__text}
                         >
-                        +79993602525
+                        +7 999 360 25 25
                         </Typo>
                     </Reference>
                 </div>
 
                 <div className={styles.contact}>
-                    <Typo
-                        as="span"
-                        size="xl"
+                    <img
+                        src="/icons/email.jpg"
                         className={styles.icon}
-                    >
-                    📧
-                    </Typo>
+                    />
                     <Reference href='mailto:info@tints.ru'>
                         <Typo
                             as="span"
                             color="black"
-                            size="xl"
+                            size="xxl"
+                            className={styles.contact__text}
                         >
                         info@tints.ru
                         </Typo>
@@ -84,20 +80,18 @@ const AdvicePage = () => (
                 </div>
 
                 <div className={styles.contact}>
-                    <Typo
-                        as="span"
-                        size="xl"
+                    <img
+                        src="/icons/map.jpg"
                         className={styles.icon}
-                    >
-                    🗺
-                    </Typo>
-                    <Reference href='mailto:info@tints.ru'>
+                    />
+                    <Reference href='https://yandex.ru/maps/-/CCUeiSvtxC'>
                         <Typo
                             as="span"
                             color="black"
-                            size="xl"
+                            size="xxl"
+                            className={styles.contact__text}
                         >
-                        110235 Москва, ул. Пушкина 18, оф. 200
+                            110235 Москва, ул. Пушкина 18, оф. 200
                         </Typo>
                     </Reference>
                 </div>

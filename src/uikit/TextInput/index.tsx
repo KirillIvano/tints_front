@@ -1,5 +1,6 @@
 import React, {
     InputHTMLAttributes,
+    TextareaHTMLAttributes,
     Ref,
     useMemo,
 } from 'react';
@@ -19,6 +20,11 @@ export type TextInputProps = CommonProps & {
     $ref?: Ref<HTMLInputElement>;
     wrapperClass?: string;
 } & InputHTMLAttributes<HTMLInputElement>;
+
+export type TextAreaProps = CommonProps & {
+    $ref?: Ref<HTMLTextAreaElement>;
+    wrapperClass?: string;
+} & TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export const TextInput = ({
     labelText,
@@ -49,6 +55,40 @@ export const TextInput = ({
                 className={cn(css.input, className)}
                 placeholder={placeholder}
                 id={inputId}
+            />
+        </div>
+    );
+};
+
+export const TextArea = ({
+    labelText,
+    id,
+    placeholder,
+    $ref,
+
+    labelClass,
+    wrapperClass,
+    className,
+
+    ...props
+}: TextAreaProps) => {
+    const textAreaId = useMemo(() => id ? id : getUniqueId(), [id]);
+
+    return (
+        <div className={cn(css.inputWrapper, wrapperClass)}>
+            <label
+                className={cn(css.label, labelClass)}
+                htmlFor={textAreaId}
+            >
+                {labelText}
+            </label>
+
+            <textarea
+                {...props}
+                ref={$ref}
+                className={cn(css.input, className)}
+                placeholder={placeholder}
+                id={textAreaId}
             />
         </div>
     );
