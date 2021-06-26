@@ -27,7 +27,7 @@ const ShadeItem = ({id, name, image, isSelected, onSelect}: ShadeProps) => {
             <input
                 className={css.shade__input}
                 value={name}
-                name="shade"
+                name="catalog_shade"
                 type="radio"
                 checked={isSelected}
                 onChange={handleSelect}
