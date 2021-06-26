@@ -4,18 +4,20 @@ import {ProductPageProps} from '@/pages/product/[id]';
 import {container} from '@/di/container';
 import {IHydrationStore} from '@/di/interfaces/IHydrationStore';
 
-class ProductStoreBase {
-    productId: number;
+import {IProductPageStore} from './context';
 
+
+class ProductStoreBase implements IProductPageStore {
     constructor(
         private _hydrationStore: IHydrationStore<ProductPageProps>,
         private _productsStore: IProductStore,
+        public productId: number,
     ) {}
+
 
     hydrate() {
         const {product} = this._hydrationStore.getData();
 
-        this.productId = product.id;
         this._productsStore.hydrateSku(product);
     }
 }

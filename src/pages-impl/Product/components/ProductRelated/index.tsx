@@ -1,11 +1,10 @@
 import React from 'react';
 import Slider, {Settings} from 'react-slick';
-import cn from 'classnames';
+import {observer} from 'mobx-react-lite';
 
-import {ProductCard, ProductImage} from '@/components';
-import {getImageUrl} from '@/util/getImageUrl';
+import {ProductCard} from '@/components';
 import {StyledProps} from '@/util/types';
-import {Accordeon} from '@/uikit';
+import {Typo} from '@/uikit';
 
 import {useCurrentSku} from '../../hooks/useCurrentSku';
 import css from './styles.module.scss';
@@ -31,19 +30,25 @@ const RELATED_SLIDER_CONFIG: Settings = {
     ],
 };
 
-const ProductRelated = () => {
+const ProductRelated = observer(({className}: StyledProps) => {
     const {related} = useCurrentSku();
 
     if (!related.length) return null;
 
     return (
-        <Slider {...RELATED_SLIDER_CONFIG}>
-            {related.map(item => (
-                <ProductCard key={item.id} {...item} />
-            ))}
-        </Slider>
+        <div className={className}>
+            <Typo as="h2" size="md" color="black" >Рекомендуем</Typo>
+
+            <Slider {...RELATED_SLIDER_CONFIG} className={css.relatedSlider}>
+                {related.map(item => (
+                    <div key={item.id} className={css.relatedItem}>
+                        <ProductCard {...item} />
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
-};
+});
 
 
 export default ProductRelated;

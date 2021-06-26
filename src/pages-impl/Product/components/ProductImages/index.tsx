@@ -8,6 +8,7 @@ import {StyledProps} from '@/util/types';
 
 import {useCurrentSku} from '../../hooks/useCurrentSku';
 import css from './styles.module.scss';
+import {observer} from 'mobx-react-lite';
 
 
 const PRODUCT_IMAGE_SLIDER_CONFIG: Settings = {
@@ -18,7 +19,6 @@ const PRODUCT_IMAGE_SLIDER_CONFIG: Settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     className: css.slides,
-
     responsive: [
         {
             breakpoint: 640,
@@ -29,7 +29,7 @@ const PRODUCT_IMAGE_SLIDER_CONFIG: Settings = {
     ],
 };
 
-const ProductImages = ({className}: StyledProps) => {
+const ProductImages = observer(({className}: StyledProps) => {
     const {images} = useCurrentSku();
 
     return (
@@ -41,6 +41,6 @@ const ProductImages = ({className}: StyledProps) => {
             </Slider>
         </div>
     );
-};
+});
 
 export default ProductImages;

@@ -27,8 +27,9 @@ const Accordeon = ({
             <div className={css.toggler} onClick={toggle}>
                 <Typo as="h2" size="sm" color="black">{title}</Typo>
             </div>
+
             <div className={css.content}>
-                <Typo as="pre" size="xs">{text}</Typo>
+                <Typo as="p" size="xs" className={css.content__text} weight={300}>{text}</Typo>
             </div>
         </div>
     );

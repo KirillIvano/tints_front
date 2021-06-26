@@ -1,0 +1,50 @@
+@import "~vars/pads";
+@import "~vars/colors";
+
+.relatedSlider {
+    margin-top: $pad2;
+
+    :global(.slick-track) {
+        display: flex !important;
+    }
+
+    :global(.slick-slide) {
+        height: auto !important;
+
+        > div {
+            height: 100%;
+        }
+    }
+
+    :global(.slick-prev),
+    :global(.slick-next) {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+
+        color: $dark_gray;
+
+        &::before {
+            color: $black;
+        }
+    }
+
+    :global(.slick-prev) {
+        left: -5%;
+    }
+
+    :global(.slick-next) {
+        right: -5%;
+    }
+}
+
+.relatedItem {
+    height: 100%;
+
+    padding-left: $pad2;
+    padding-right: $pad2;
+
+    .productCard {
+        height: 100%;
+    }
+}
