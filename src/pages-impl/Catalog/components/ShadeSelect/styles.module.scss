@@ -61,6 +61,11 @@
     .shade__input:checked ~ .shade__indent {
         border-color: $firm_blue;
     }
+
+    .shade__input:focus ~ .shade__indent,
+    .shade__input:active ~ .shade__indent {
+        border-color: $firm;
+    }
 }
 
 .shade.all {

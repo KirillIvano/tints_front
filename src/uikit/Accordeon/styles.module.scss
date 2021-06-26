@@ -30,10 +30,15 @@
 .content {
     margin-top: $pad2;
 
-    overflow: hidden;
+    overflow-y: hidden;
     max-height: 0;
 
     transition: max-height 0.3s;
+
+    .content__text {
+        white-space: pre-wrap;
+        line-height: 1.4;
+    }
 }
 
 .selected {

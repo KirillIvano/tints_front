@@ -8,6 +8,8 @@
     }
 
     .cartButton {
+        max-width: 200px;
+
         margin-top: $pad8;
     }
 
@@ -17,6 +19,7 @@
 
     .description {
         margin-top: $pad1;
+
         line-height: 1.4;
     }
 }

@@ -3,8 +3,14 @@ import React, {useMemo} from 'react';
 import {useSyncEffect} from '@/hooks/useSyncEffect';
 import {ProductPageProps} from '@/pages/product/[id]';
 import {Box} from '@/uikit';
-import {ProductImages, ProductInfo, Breadcrumbs, ProductDescription} from './components';
 
+import {
+    ProductImages,
+    ProductInfo,
+    Breadcrumbs,
+    ProductDescription,
+    ProductRelated,
+} from './components';
 import {ProductPageStoreContext} from './context';
 import {ProductStore} from './store';
 import css from './styles.module.scss';
@@ -26,13 +32,13 @@ const ProductPageBase = () => {
 
             <ProductDescription className={css.description} />
 
-            {/* <ProductRelated /> */}
+            <ProductRelated className={css.related} />
         </Box>
     );
 };
 
 const ProductPage = ({productId}: ProductPageProps) => {
-    const productPageStore = useMemo(() => new ProductStore(), []);
+    const productPageStore = useMemo(() => new ProductStore(productId), [productId]);
 
     useSyncEffect(() => {
         productPageStore.hydrate();
