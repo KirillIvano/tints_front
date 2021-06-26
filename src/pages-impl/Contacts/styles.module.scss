@@ -1,12 +1,17 @@
 @import "~vars/pads";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.container {
+    padding-top: $pad10;
+    padding-bottom: $pad10;
+}
 
 .main {
-    display: flex;
-    justify-content: space-between;
     margin: $pad10 auto;
 
     h2 {
-        margin-bottom: 70px;
+        margin-bottom: $pad12;
     }
 }
 
@@ -14,16 +19,46 @@
     width: 285px;
 
     .input {
-        margin-bottom: 15px;
+        margin-bottom: $pad4;
     }
 }
 
-.contacts {
-    .contact {
-        margin-bottom: 20px;
+.contact {
+    margin-bottom: $pad5;
+    display: flex;
+
+    .contact__text {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
     }
 }
 
 .icon {
-    margin-right: 20px;
+    margin-right: $pad6;
+    height: 44px;
+    min-width: auto;
+}
+
+@media all and (max-width: $screen_md) {
+    .contacts {
+        padding-top: $pad16;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .main {
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: $pad8;
+        }
+    }
+
+    .icon {
+        height: 28px;
+    }
+
+    .contact__text {
+        font-size: $font_lg;
+    }
 }
