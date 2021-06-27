@@ -10,8 +10,8 @@ import css from './styles.module.scss';
 
 
 const TESTIMONIALS_SLIDER_SETTINGS = {
-    centerPadding: '100px',
     dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -20,6 +20,7 @@ const TESTIMONIALS_SLIDER_SETTINGS = {
         {
             breakpoint: 640,
             settings: {
+                arrows: false,
                 slidesToShow: 1,
             },
         },
