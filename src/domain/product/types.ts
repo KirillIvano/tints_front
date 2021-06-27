@@ -1,9 +1,12 @@
 export type Banner = {
     title: string;
     text: string;
-    image: string;
+
     buttonText: string;
     buttonUrl: string;
+
+    backgroundLg: string
+	backgroundSm: string
 };
 
 export type CategoryPreview = {

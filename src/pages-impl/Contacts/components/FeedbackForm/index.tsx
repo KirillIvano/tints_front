@@ -55,6 +55,7 @@ const FeedbackForm = observer(() => {
             />
 
             <Button
+                width="full"
                 disabled={feedbackStatus === 'pending'}
             >
                 Отправить

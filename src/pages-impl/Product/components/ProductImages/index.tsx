@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider, {Settings} from 'react-slick';
 import cn from 'classnames';
+import {observer} from 'mobx-react-lite';
 
 import {ProductImage} from '@/components';
 import {getImageUrl} from '@/util/getImageUrl';
@@ -8,7 +9,6 @@ import {StyledProps} from '@/util/types';
 
 import {useCurrentSku} from '../../hooks/useCurrentSku';
 import css from './styles.module.scss';
-import {observer} from 'mobx-react-lite';
 
 
 const PRODUCT_IMAGE_SLIDER_CONFIG: Settings = {

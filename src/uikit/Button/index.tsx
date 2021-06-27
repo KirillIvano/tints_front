@@ -5,13 +5,16 @@ import styles from './styles.module.scss';
 
 
 export type ButtonSize = 'small' | 'normal';
+export type ButtonWidth = 'full' | 'normal';
 
 type ButtonProps = {
     size?: ButtonSize;
+    width?: ButtonWidth;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
     size,
+    width='normal',
 
     className,
     ...props
@@ -22,6 +25,7 @@ const Button = ({
             className,
             styles.button,
             styles[`size_${size}`],
+            styles[`width_${width}`],
         )}
     />
 );

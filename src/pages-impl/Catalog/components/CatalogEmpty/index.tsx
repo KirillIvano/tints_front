@@ -18,7 +18,7 @@ const CatalogEmpty = () => {
             </Typo>
 
             <div className={css.buttonContainer}>
-                <Button onClick={handleReset}>Сбросить фильтры</Button>
+                <Button width="full" onClick={handleReset}>Сбросить фильтры</Button>
             </div>
         </div>
     );

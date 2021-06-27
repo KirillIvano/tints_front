@@ -5,7 +5,6 @@
 
 .button {
     display: block;
-    width: 100%;
     padding: $pad3 $pad5;
 
     color: white;
@@ -17,6 +16,14 @@
     transition: background-color 0.3s ease-in-out;
 
     cursor: pointer;
+}
+
+.width_normal {
+    width: max-content;
+}
+
+.width_full {
+    width: 100%;
 }
 
 .button_normal {

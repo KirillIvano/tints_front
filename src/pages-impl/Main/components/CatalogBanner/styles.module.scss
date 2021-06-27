@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
 
-    padding: $pad10 0;
+    padding: $pad16 0;
 
     background: $firm;
 
@@ -33,6 +33,7 @@
         transition: background-color 0.3s ease-in-out;
 
         border: 4px solid $white;
+        border-radius: 6px;
         background-color: rgba(0, 0, 0, 0);
     }
 

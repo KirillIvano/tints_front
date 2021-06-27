@@ -1,8 +1,13 @@
 @import "~vars/pads";
 @import "~vars/screen";
 
+.heading {
+    margin-bottom: $pad2;
+    padding-left: $pad4;
+}
+
 .carousel {
-    padding-bottom: 30px;
+    padding-bottom: $pad8;
 
     :global(.slick-slide) {
         padding: $pad4;

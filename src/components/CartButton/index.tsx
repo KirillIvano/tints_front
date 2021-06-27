@@ -67,6 +67,7 @@ const CartButton = observer(({
         />
     ) : (
         <Button
+            width="full"
             className={className}
             onClick={handleClick}
         >
