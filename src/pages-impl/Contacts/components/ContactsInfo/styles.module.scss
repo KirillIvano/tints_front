@@ -1,0 +1,31 @@
+@import "~vars/pads";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.contact {
+    margin-bottom: $pad5;
+    display: flex;
+
+    .contactText {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    .contactIcon {
+        margin-right: $pad6;
+        height: 44px;
+        min-width: auto;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .contact {
+        .contactText {
+            font-size: $font_lg;
+        }
+
+        .contactIcon {
+            height: 28px;
+        }
+    }
+}

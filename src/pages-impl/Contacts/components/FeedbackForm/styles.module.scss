@@ -1,0 +1,21 @@
+@import "~vars/pads";
+@import "~vars/colors";
+@import "~vars/fonts";
+
+.input {
+    margin-bottom: $pad4;
+}
+
+.feedbackStatus {
+    margin-top: $pad2;
+
+    font-size: $font_xs;
+
+    &.success {
+        color: $firm;
+    }
+
+    &.error {
+        color: red;
+    }
+}

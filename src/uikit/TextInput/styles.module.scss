@@ -3,6 +3,10 @@
 @import '~vars/colors';
 
 .inputWrapper {
+    .asteriks {
+        color: red;
+    }
+
     .label {
         color: $dark_gray;
         font-size: $font_xs;
@@ -26,5 +30,12 @@
 
     .input::placeholder {
         color: $light_gray;
+    }
+
+    .error {
+        margin-top: $pad1;
+
+        font-size: $font_xs;
+        color: red;
     }
 }
