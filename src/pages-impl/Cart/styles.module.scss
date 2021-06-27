@@ -1,0 +1,25 @@
+@import "~vars/pads";
+@import "~vars/screen";
+
+.cartPage {
+    padding-top: $pad16;
+    padding-bottom: $pad16 * 2;
+
+    .cartInfo {
+        .checkout {
+            margin-top: $pad6;
+        }
+    }
+
+    .heading {
+        margin-bottom: $pad4;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .cartPage {
+        .cartInfo {
+            margin-top: $pad12;
+        }
+    }
+}

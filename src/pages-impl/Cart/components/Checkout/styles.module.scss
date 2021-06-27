@@ -1,0 +1,15 @@
+@import "~vars/pads";
+
+.field {
+    & + & {
+        margin-top: $pad4;
+    }
+}
+
+.paymentCaption {
+    margin-bottom: $pad1;
+}
+
+.submit {
+    margin-top: $pad4;
+}

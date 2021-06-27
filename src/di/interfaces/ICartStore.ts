@@ -1,6 +1,7 @@
 import {CartItemType} from '@/domain/cart/types';
 
 export interface ICartStore {
+    isInitialized: boolean;
     cartItems: CartItemType[];
     itemsCount: number;
 

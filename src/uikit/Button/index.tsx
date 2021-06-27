@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import styles from './styles.module.scss';
+import {Reference} from '..';
 
 
 export type ButtonSize = 'small' | 'normal';
@@ -12,7 +13,7 @@ type ButtonProps = {
     width?: ButtonWidth;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({
+export const Button = ({
     size,
     width='normal',
 
@@ -30,4 +31,26 @@ const Button = ({
     />
 );
 
-export default Button;
+
+type ButtonLinkProps = {
+    size?: ButtonSize;
+    width?: ButtonWidth;
+} & React.ComponentProps<typeof Reference>;
+
+export const ButtonLink = ({
+    size,
+    width,
+    className,
+    ...props
+}: ButtonLinkProps) => (
+    <Reference
+        {...props}
+        className={classnames(
+            className,
+            styles.button,
+            styles[`size_${size}`],
+            styles[`width_${width}`],
+        )}
+    />
+);
+

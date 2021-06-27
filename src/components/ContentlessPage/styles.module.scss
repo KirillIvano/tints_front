@@ -1,0 +1,15 @@
+@import "~vars/pads";
+
+.page {
+    padding-top: $pad16 * 2;
+    padding-bottom: $pad16;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+        margin-top: $pad6;
+    }
+}

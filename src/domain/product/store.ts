@@ -11,7 +11,7 @@ export class ProductStore implements IProductStore {
     @observable
     private _skus = new Map<number, Sku>();
     @observable.ref
-    private _productPreviews: ProductPreview[] = [];
+    private _productPreviews = new Map<number, ProductPreview>();
     @observable
     private _categories = new Map<number, CategoryPreview>();
 
@@ -22,7 +22,7 @@ export class ProductStore implements IProductStore {
 
     @computed
     get productPreviews() {
-        return [...this._productPreviews];
+        return [...this._productPreviews.values()];
     }
 
     @computed
@@ -33,8 +33,11 @@ export class ProductStore implements IProductStore {
     getSkuById = (id: number) =>
         this._skus.get(id);
 
+    getProductPreviewById = (productId: number) =>
+        this._productPreviews.get(productId);
+
     hydratePreviews(previews: ProductPreview[]) {
-        this._productPreviews = [...previews];
+        previews.forEach(preview => this._productPreviews.set(preview.id, preview));
     }
 
     hydrateSku(product: Sku) {
@@ -42,7 +45,7 @@ export class ProductStore implements IProductStore {
     }
 
     hydrateCategories(categories: CategoryPreview[]) {
-        categories.map(category => this._categories.set(category.id, category));
+        categories.forEach(category => this._categories.set(category.id, category));
     }
 }
 

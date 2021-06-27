@@ -10,6 +10,17 @@ export const useProductStore = (): IProductStore => useInject(DINames.PRODUCT_ST
 
 export const useProductPreviews = (): ProductPreview[] => useProductStore().productPreviews;
 
+export const useProductPreview = (productId: number): ProductPreview | undefined =>
+    useProductStore().getProductPreviewById(productId);
+// TODO: create helper for creating safe hooks
+export const useProductPreviewSafe = (productId: number): ProductPreview => {
+    const product = useProductPreview(productId);
+
+    assertExists(product);
+
+    return product;
+};
+
 export const useSkuById = (productId: number): Sku | undefined =>
     useProductStore().getSkuById(productId);
 
