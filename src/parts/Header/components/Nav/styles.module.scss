@@ -1,6 +1,7 @@
 @import "~vars/pads";
 @import "~vars/colors";
 @import "~vars/fonts";
+@import "~vars/screen";
 
 .nav {
     .nav__list {
@@ -23,6 +24,25 @@
                 }
 
                 &.selected {
+                    color: $firm;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .nav {
+        position: absolute;
+        top: 80px;
+        z-index: 0;
+
+        .nav__list {
+            display: block;
+
+            .nav__item {
+                .nav__itemText {
+                    font-size: $font_md;
                     color: $firm;
                 }
             }

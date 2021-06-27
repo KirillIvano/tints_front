@@ -20,10 +20,36 @@
     }
 }
 
-@media all and (max-width: $screen_sm) {
+.header__mobile_menu {
+    display: none;
+}
+
+@media all and (max-width: $screen_md) {
     .header {
-        .header__logo {
-            width: 80px;
+        height: 80px;
+        transition: .5s;
+
+        &.active {
+            margin-bottom: 210px;
         }
+    }
+
+    .header__nav {
+        visibility: hidden;
+        opacity: 0;
+        transition: .7s ease;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .header__logo {
+        width: 160px;
+    }
+    
+    .header__mobile_menu {
+        display: block;
     }
 }
