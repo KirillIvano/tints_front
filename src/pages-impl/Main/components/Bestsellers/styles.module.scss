@@ -5,11 +5,13 @@
     margin-top: $pad2;
 
     :global(.slick-track) {
-        display: flex !important;
+        display: flex;
     }
 
     :global(.slick-slide) {
-        height: auto !important;
+        padding: $pad2;
+
+        height: auto;
 
         > div {
             height: 100%;
