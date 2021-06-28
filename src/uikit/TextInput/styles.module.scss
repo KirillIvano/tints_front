@@ -32,6 +32,13 @@
         color: $light_gray;
     }
 
+    .square {
+        margin-top: 0;
+
+        border-radius: 0;
+        border: 0;
+    }
+
     .error {
         margin-top: $pad1;
 

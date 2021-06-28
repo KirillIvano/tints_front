@@ -14,6 +14,7 @@ export type CommonProps = {
     labelText?: string;
     textArea?: string;
     labelClass?: string;
+    square?: boolean;
 }
 
 export type TextInputProps = CommonProps & {
@@ -30,6 +31,7 @@ export const TextInput = React.forwardRef(({
     labelText,
     id,
     placeholder,
+    square,
 
     labelClass,
     wrapperClass,
@@ -56,7 +58,7 @@ export const TextInput = React.forwardRef(({
             <input
                 {...props}
                 ref={ref}
-                className={cn(css.input, className)}
+                className={cn(css.input, className, (square ? css.square : ''))}
                 placeholder={placeholder}
                 id={inputId}
             />

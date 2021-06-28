@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {useForm} from 'react-hook-form';
 
 import cn from 'classnames';
-import {Typo, Input, Reference} from '@/uikit';
+import {Typo, TextInput, Button} from '@/uikit';
 
 import styles from './styles.module.scss';
 
@@ -28,14 +28,18 @@ const NewsLetter = () => {
             </div>
             <div className="row">
                 <div className={cn(styles.subscribe, 'col-xs-12')}>
-                    <Input
-                        className={cn(styles.input, styles.email, 'col-md-8')}
+                    <TextInput
+                        className={styles.input}
+                        wrapperClass={cn(styles.wrapper, 'col-md-8')}
+                        placeholder='example@mail.ru'
+                        square
                     />
-                    <Reference
+                    <Button
                         className={styles.button}
+                        square
                     >
                         Подписаться
-                    </Reference>
+                    </Button>
                 </div>
             </div>
         </div>
