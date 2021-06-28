@@ -1,14 +1,18 @@
 import React from 'react';
+import {Box} from '@/uikit';
 
-import {Box, Typo} from '@/uikit';
+import {NewsLetter, Social} from './components';
 
 import styles from './styles.module.scss';
 
 
 const Footer = () => (
     <footer className={styles.footer}>
-        <Box>
-            <Typo color="white">Подпишитесь на нашу рассылку</Typo>
+        <Box className={styles.main}>
+            <div className="row">
+                <NewsLetter />
+                <Social />
+            </div>
         </Box>
     </footer>
 );
