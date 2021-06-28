@@ -1,8 +1,6 @@
-.global {
-    .container {
-        margin: 0 auto;
-        padding: 0 20px;
-    }
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
 
     h2,
     h3 {
@@ -42,15 +40,15 @@
         margin-bottom: 10px;
     }
 
-    .top__header p {
+    :global(.top__header)p {
         text-align: center;
     }
 
-    .center {
+    :global(.center) {
         text-align: center;
     }
 
-    .black {
+    :global(.black) {
         color: #000;
     }
 
@@ -79,11 +77,11 @@
         margin-top: 20px;
     }
 
-    .reverse {
+    :global(.reverse) {
         flex-direction: column-reverse;
     }
 
-    .section__item {
+    :global(.section__item) {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -97,70 +95,73 @@
     footer {
         margin-top: 40px;
     }
+}
 
-    @media all and (min-width: 640px) {
-        .container {
-            width: 540px;
-            padding: 0;
-        }
+@media all and (min-width: 640px) {
+    .container {
+        width: 540px;
+        padding: 0;
     }
+}
 
-    @media all and (min-width: 768px) {
-        .container {
-            width: 720px;
-        }
+@media all and (min-width: 768px) {
+    .container {
+        width: 720px;
 
-        section,
-        .reverse {
+        section {
             flex-direction: row;
         }
 
-        .section__item {
+        :global(.reverse) {
+            flex-direction: row;
+        }
+
+        :global(.section__item) {
             width: 48%;
         }
     }
+}
 
-    @media all and (min-width: 1024px) {
-        .container { width: 960px }
-    }
+@media all and (min-width: 1024px) {
+    .container { width: 960px }
+}
 
-    @media all and (min-width: 1280px) {
-        .container { width: 1140px }
-    }
+@media all and (min-width: 1280px) {
+    .container { width: 1140px }
+}
 
-    /* Light */
-    @font-face {
-        font-family: 'Helvetica';
-        src:
-            local('Helvetica'),
-            url('../fonts/Helvetica-Light.ttf') format('truetype'),
-            url('../fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/Helvetica-Light.woff') format('woff');
-        font-weight: 300;
-        font-style: normal;
-    }
+/* Light */
+@font-face {
+    font-family: 'Helvetica';
+    src:
+        local('Helvetica'),
+        url('../fonts/Helvetica-Light.ttf') format('truetype'),
+        url('../fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
-    /* Regular */
-    @font-face {
-        font-family: 'Helvetica';
-        src:
-            local('Helvetica'),
-            url('../fonts/Helvetica-Regular.ttf') format('truetype'),
-            url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/Helvetica-Regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-    }
+/* Regular */
+@font-face {
+    font-family: 'Helvetica';
+    src:
+        local('Helvetica'),
+        url('../fonts/Helvetica-Regular.ttf') format('truetype'),
+        url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-    /* Medium */
-    @font-face {
-        font-family: 'Helvetica';
-        src:
-            local('Helvetica'),
-            url('../fonts/Helvetica-Medium.ttf') format('truetype'),
-            url('../fonts/Helvetica-Medium.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/Helvetica-Medium.woff') format('woff');
-        font-weight: 500;
-        font-style: normal;
-    }
+/* Medium */
+@font-face {
+    font-family: 'Helvetica';
+    src:
+        local('Helvetica'),
+        url('../fonts/Helvetica-Medium.ttf') format('truetype'),
+        url('../fonts/Helvetica-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Helvetica-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }

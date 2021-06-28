@@ -14,7 +14,7 @@ const Article = (
     }: ArticleProps,
 ) => (
     <div
-        className={styles.global}
+        className={styles.container}
         {...props}
     >
         {children}
