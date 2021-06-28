@@ -24,7 +24,7 @@ const CatalogPageBase = () => (
                 <CategorySelect className={css.categorySelect} />
             </div>
 
-            <div className="col-md-9 col-xs-12">
+            <div className={cn(css.products, 'col-md-9 col-xs-12')}>
                 <CatalogProducts />
             </div>
         </div>

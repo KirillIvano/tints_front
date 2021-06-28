@@ -1,0 +1,7 @@
+@import "~vars/pads";
+
+.infoItem {
+    & + & {
+        margin-top: $pad3;
+    }
+}

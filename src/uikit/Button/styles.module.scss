@@ -5,10 +5,9 @@
 
 .button {
     display: block;
-    width: 100%;
     padding: $pad3 $pad5;
 
-    color: white;
+    color: white !important;
     font-size: $font_xs;
 
     background-color: $firm;
@@ -17,6 +16,14 @@
     transition: background-color 0.3s ease-in-out;
 
     cursor: pointer;
+}
+
+.width_normal {
+    width: max-content;
+}
+
+.width_full {
+    width: 100%;
 }
 
 .button_normal {
@@ -29,7 +36,6 @@
 
 .button:hover,
 .button:focus {
-    outline: none;
     background-color: darken($firm, 10);
 }
 

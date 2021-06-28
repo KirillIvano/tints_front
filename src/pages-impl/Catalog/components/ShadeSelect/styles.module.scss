@@ -1,6 +1,7 @@
 @import "~vars/pads";
 @import "~vars/util";
 @import "~vars/colors";
+@import "~vars/screen";
 
 .shadeSelect {
     display: flex;
@@ -60,10 +61,22 @@
     .shade__input:checked ~ .shade__indent {
         border-color: $firm_blue;
     }
+
+    .shade__input:focus ~ .shade__indent,
+    .shade__input:active ~ .shade__indent {
+        border-color: $firm;
+    }
 }
 
 .shade.all {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: $screen_md) {
+    .shade {
+        width: 50px;
+        height: 50px;
+    }
 }

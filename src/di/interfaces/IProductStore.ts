@@ -1,9 +1,10 @@
-import {CategoryPreview, Product, ProductPreview} from '@/domain/product/types';
+import {CategoryPreview, ProductPreview, Sku} from '@/domain/product/types';
 
 
 export type IProductStore = {
-    getProductById(id: number): Product | undefined;
-    hydrateProduct(product: Product): void;
+    getSkuById(id: number): Sku | undefined;
+    getProductPreviewById(productId: number): ProductPreview | undefined;
+    hydrateSku(product: Sku): void;
     hydratePreviews(previews: ProductPreview[]): void;
     hydrateCategories(categories: CategoryPreview[]): void;
 

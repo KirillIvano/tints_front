@@ -1,4 +1,5 @@
-import React from 'react';
+import {useMemo} from 'react';
+import hash from 'object-hash';
 import {observer} from 'mobx-react-lite';
 import cn from 'classnames';
 
@@ -12,11 +13,12 @@ import {CatalogEmpty} from '..';
 
 const CatalogProducts = observer(({className}: StyledProps) => {
     const {assortment} = useCatalogStore();
+    const assortmentHash = useMemo(() => hash(assortment), [assortment]);
 
     if (!assortment.length) return <CatalogEmpty />;
 
     return (
-        <div className={cn(className, css.products, 'row')}>
+        <div key={assortmentHash} className={cn(className, css.products, 'row')}>
             {assortment.map(product => (
                 <div
                     className={cn(css.product, 'col-md-4 col-xs-6')}

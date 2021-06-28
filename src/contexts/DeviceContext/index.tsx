@@ -1,21 +1,31 @@
-import React, {createContext, useContext} from 'react';
+import {useState} from 'react';
+import {createContext, useContext, useEffect} from 'react';
 
-export const DeviceContext = createContext<'mobile' | 'desktop'>('desktop');
+export type DeviceType = 'mobile' | 'desktop';
+export const DeviceContext = createContext<DeviceType>('desktop');
 
-// hooks
 export const useDeviceType = () => useContext(DeviceContext);
 
-// renders component for specific device
-const createRenderForDeviceHOC = (selectedDevice: 'mobile' | 'desktop') =>
-    <TProps extends Record<PropertyKey, unknown>>(Comp: React.ComponentType<TProps>) => {
-        const DeviceBranch = (props: TProps) => {
-            const device = useDeviceType();
+export const WithDeviceContext: React.FC = ({children}) => {
+    const [currentDevice, setDevice] = useState<DeviceType>('mobile');
 
-            return device === selectedDevice ? <Comp {...props} /> : null;
+    useEffect(() => {
+        const handleResize = () => {
+            const size = window.innerWidth;
+
+            if (size < 640) setDevice('mobile');
+            else setDevice('desktop');
         };
 
-        return DeviceBranch;
-    };
+        window.addEventListener('resize', handleResize);
+        handleResize();
 
-export const renderForMobileHOC = createRenderForDeviceHOC('mobile');
-export const renderForDesktopHOC = createRenderForDeviceHOC('desktop');
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return (
+        <DeviceContext.Provider value={currentDevice}>
+            {children}
+        </DeviceContext.Provider>
+    );
+};

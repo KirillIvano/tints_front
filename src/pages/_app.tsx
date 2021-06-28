@@ -12,6 +12,7 @@ import {useAppInit} from '@/hooks/useAppInit';
 import {Header} from '@/parts';
 
 import './_app.scss';
+import {WithDeviceContext} from '@/contexts/DeviceContext';
 
 
 const App = ({
@@ -21,15 +22,17 @@ const App = ({
     useAppInit(pageProps);
 
     return (
-        <div className="app" id="root">
-            <Header />
+        <WithDeviceContext>
+            <div className="app" id="root">
+                <Header />
 
-            <main>
-                <Component {...pageProps} />
-            </main>
+                <main>
+                    <Component {...pageProps} />
+                </main>
 
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </WithDeviceContext>
     );
 };
 

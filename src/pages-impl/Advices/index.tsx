@@ -21,7 +21,7 @@ const AdvicePage = () => (
                 as="p"
                 color="black"
                 size="sm"
-                weight='normal'
+                weight={300}
             >
                 Прочитайте наши советы, чтобы вы могли достичь самых лучших результатов с нашими продуктами.
             </Typo>

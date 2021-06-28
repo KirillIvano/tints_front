@@ -16,7 +16,7 @@ const ArticlePreview = ({
     image,
     href,
 }: ArticlePreviewProps) => (
-    <Reference
+    <a
         href={href}
         className={styles.preview__link}
     >
@@ -37,7 +37,7 @@ const ArticlePreview = ({
 
             <div aria-hidden="true" className={styles.preview__button} />
         </div>
-    </Reference>
+    </a>
 );
 
 export default ArticlePreview;

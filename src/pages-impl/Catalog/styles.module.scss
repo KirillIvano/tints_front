@@ -1,4 +1,5 @@
 @import "~vars/pads";
+@import "~vars/screen";
 
 .filters {
     .shadeSelect {
@@ -12,4 +13,10 @@
 
 .catalog {
     padding-bottom: $pad12;
+}
+
+@media all and (max-width: $screen_md) {
+    .products {
+        margin-top: $pad8;
+    }
 }

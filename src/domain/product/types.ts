@@ -1,9 +1,12 @@
 export type Banner = {
     title: string;
     text: string;
-    image: string;
+
     buttonText: string;
     buttonUrl: string;
+
+    backgroundLg: string
+	backgroundSm: string
 };
 
 export type CategoryPreview = {
@@ -20,7 +23,7 @@ export type CatalogCategory = {
 export type Sku = {
 	id: number;
 	name: string;
-	image: string;
+	images: string[];
 
 	productId: number;
 	categoryId: number;
@@ -34,6 +37,10 @@ export type Sku = {
 
     new: boolean;
 	top: boolean;
+
+	description: string;
+	info: ProductInfo[];
+	related: ProductPreview[];
 }
 
 export type ProductPreview = {
@@ -69,7 +76,7 @@ export type Product = {
 	description: string;
 	info: ProductInfo[];
 	sku: Sku[];
-	related: Sku[];
+	related: ProductPreview[];
 }
 
 export type Category = {

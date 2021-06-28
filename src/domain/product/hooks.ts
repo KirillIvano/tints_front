@@ -3,18 +3,29 @@ import {DINames} from '@/di/keys';
 import {useInject} from '@/di/useInject';
 import {assertExists} from '@/util/assertions';
 
-import {Product, ProductPreview} from './types';
+import {ProductPreview, Sku} from './types';
 
 
 export const useProductStore = (): IProductStore => useInject(DINames.PRODUCT_STORE);
 
 export const useProductPreviews = (): ProductPreview[] => useProductStore().productPreviews;
 
-export const useProductById = (productId: number): Product | undefined =>
-    useProductStore().getProductById(productId);
+export const useProductPreview = (productId: number): ProductPreview | undefined =>
+    useProductStore().getProductPreviewById(productId);
+// TODO: create helper for creating safe hooks
+export const useProductPreviewSafe = (productId: number): ProductPreview => {
+    const product = useProductPreview(productId);
 
-export const useProductByIdSafe = (productId: number): Product => {
-    const product = useProductById(productId);
+    assertExists(product);
+
+    return product;
+};
+
+export const useSkuById = (productId: number): Sku | undefined =>
+    useProductStore().getSkuById(productId);
+
+export const useProductByIdSafe = (productId: number): Sku => {
+    const product = useSkuById(productId);
 
     assertExists(product);
 

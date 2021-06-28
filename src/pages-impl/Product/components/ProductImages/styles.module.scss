@@ -1,0 +1,24 @@
+@import "~vars/colors";
+@import "~vars/pads";
+@import "~vars/screen";
+
+.container {
+    padding: 0 $pad8;
+    padding-bottom: $pad8;
+}
+
+.slides {
+    position: relative;
+
+    :global(.slick-slide) {
+        padding: $pad12;
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .slides {
+        :global(.slick-slide) {
+            padding: $pad6;
+        }
+    }
+}
