@@ -1,6 +1,18 @@
 @import "~vars/pads";
 
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .products {
+    animation: fadeOut 0.3s ease-in-out;
+
     .product {
         &:nth-child(n + 4) {
             margin-top: $pad8;

@@ -1,14 +1,17 @@
 import React from 'react';
+import cn from 'classnames';
 
 import {Reference, Typo} from '@/uikit';
 
-import styles from './styles.module.scss';
+import css from './styles.module.scss';
+import {StyledProps} from '@/util/types';
 
-const CatalogBanner = () => (
-    <div className={styles.catalogBanner}>
-        <div className={styles.decorativeBackground}></div>
+
+const CatalogBanner = ({className}: StyledProps) => (
+    <div className={cn(css.catalogBanner, className)}>
+        <div className={css.decorativeBackground}></div>
         <Reference
-            className={styles.catalogButton}
+            className={css.catalogButton}
             href="/catalog"
         >
             <Typo

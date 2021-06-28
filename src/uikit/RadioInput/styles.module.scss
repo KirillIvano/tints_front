@@ -1,0 +1,47 @@
+@import "~vars/colors";
+@import "~vars/fonts";
+@import "~vars/pads";
+@import "~vars/util";
+
+.radioWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    padding: $pad1;
+
+    font-family: 'Open Sans', sans-serif;
+
+    .radioInput {
+        @extend .visually-hidden;
+
+        position: absolute;
+        outline: none !important;
+    }
+
+    .radioBox {
+        position: absolute;
+
+        height: 12px;
+        width: 12px;
+
+        border-radius: 50%;
+        background: $light_gray;
+    }
+
+    .radioInput:checked + .radioBox {
+        background: $black;
+    }
+
+    .radioInput:global(.focus-visible) + .radioBox {
+        outline: 2px solid $firm;
+    }
+
+    .radioLabel {
+        padding-left: $pad5;
+
+        color: $black;
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+}

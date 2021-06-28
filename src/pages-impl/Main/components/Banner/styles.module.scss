@@ -1,0 +1,57 @@
+@import "~vars/pads";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.banner {
+    position: relative;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .bannerContent {
+        min-height: 400px;
+        width: 50%;
+
+        padding: $pad12 initial;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .bannerText {
+            margin-top: $pad4;
+
+            line-height: 1.4;
+        }
+
+        .bannerButton {
+            margin-top: $pad4;
+
+            padding: $pad4 $pad10;
+        }
+    }
+}
+
+@media all and (max-width: $screen_sm) {
+    .banner {
+        .bannerContent {
+            min-height: 200px;
+            width: 100%;
+
+            .bannerHeading {
+                color: white;
+                font-size: $font_lg;
+            }
+
+            .bannerText {
+                color: white;
+            }
+        }
+    }
+
+    .bannerOverlay {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}

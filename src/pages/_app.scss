@@ -1,5 +1,5 @@
 @import "~vars/colors";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 *,
 *::before,
@@ -9,6 +9,7 @@
     font-family: inherit;
     box-sizing: border-box;
 
+    // TODO
     min-height: 0;
     min-width: 0;
 }
@@ -37,11 +38,11 @@ label {
     cursor: pointer;
 }
 
-:global(.js-focus-visible) :focus {
+.js-focus-visible .focus-visible:focus {
     outline: 2px solid $firm;
 }
 
-:global(.js-focus-visible) :focus:not(:global(.focus-visible)) {
+.js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }
 
@@ -49,4 +50,8 @@ label {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
     min-height: 100vh;
+}
+
+.slick-list {
+    position: relative;
 }

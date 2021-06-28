@@ -11,6 +11,9 @@ export const CART_STORE_KEY = 'cart';
 
 @injectable()
 export class CartStore implements ICartStore {
+    @observable
+    isInitialized: boolean;
+
     constructor() {
         makeObservable(this);
     }
@@ -94,5 +97,7 @@ export class CartStore implements ICartStore {
                 cartItem,
             ),
         );
+
+        this.isInitialized = true;
     }
 }

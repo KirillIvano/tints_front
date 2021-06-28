@@ -13,12 +13,12 @@ const CatalogEmpty = () => {
 
     return (
         <div className={css.catalogEmpty}>
-            <Typo size="lg" color="black">
+            <Typo size="lg" color="black" className={css.catalogText}>
                 По вашему запросу ничего не найдено, попробуйте поменять фильтры
             </Typo>
 
             <div className={css.buttonContainer}>
-                <Button onClick={handleReset}>Сбросить фильтры</Button>
+                <Button width="full" onClick={handleReset}>Сбросить фильтры</Button>
             </div>
         </div>
     );

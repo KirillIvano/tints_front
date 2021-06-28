@@ -43,7 +43,7 @@ const ProductCard = ({
 
                 <Typo
                     as="p"
-                    size="sm"
+                    size="xs"
                     className={css.productName}
                 >
                     {name}

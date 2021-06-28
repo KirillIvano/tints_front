@@ -1,4 +1,6 @@
+import {Product} from '@/domain/product/types';
 import {Resource} from '@/util/service';
+
 import {CategoryDto, ProductPreviewDto, ShadeDto} from './dto';
 
 export const allProductsResource = new Resource<{categories: CategoryDto[]}>({
@@ -11,7 +13,7 @@ export const allShadesResource = new Resource<{shades: ShadeDto[]}>({
     shouldCache: true,
 });
 
-export const productResource = new Resource({
+export const productResource = new Resource<{product: Product}>({
     shouldBatch: true,
     shouldCache: true,
 });

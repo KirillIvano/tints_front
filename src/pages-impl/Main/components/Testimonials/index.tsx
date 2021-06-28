@@ -1,13 +1,17 @@
 import React, {ComponentProps} from 'react';
 import Slider from 'react-slick';
+import cn from 'classnames';
 
 import Testimonial from '@/components/Testimonial';
+import {StyledProps} from '@/util/types';
+import {Typo} from '@/uikit';
 
 import css from './styles.module.scss';
 
+
 const TESTIMONIALS_SLIDER_SETTINGS = {
-    centerPadding: '100px',
     dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -16,6 +20,7 @@ const TESTIMONIALS_SLIDER_SETTINGS = {
         {
             breakpoint: 640,
             settings: {
+                arrows: false,
                 slidesToShow: 1,
             },
         },
@@ -29,18 +34,24 @@ const TEST_PROPS: ComponentProps<typeof Testimonial> = {
     description: 'Доброго времени суток!!!\nОкрашивание волос для меня – это не просто праздное развлечение',
 };
 
-const Testimonials = () => {
-    return (
-        <div className={css.carousel}>
-            <Slider {...TESTIMONIALS_SLIDER_SETTINGS}>
-                <Testimonial {...TEST_PROPS} />
-                <Testimonial {...TEST_PROPS} />
-                <Testimonial {...TEST_PROPS} />
-                <Testimonial {...TEST_PROPS} />
-                <Testimonial {...TEST_PROPS} />
-            </Slider>
-        </div>
-    );
-};
+const Testimonials = ({className}: StyledProps) => (
+    <div className={cn(css.carousel, className)}>
+        <Typo
+            size="md"
+            color="black"
+            className={css.heading}
+        >
+            Отзывы
+        </Typo>
+
+        <Slider {...TESTIMONIALS_SLIDER_SETTINGS}>
+            <Testimonial {...TEST_PROPS} />
+            <Testimonial {...TEST_PROPS} />
+            <Testimonial {...TEST_PROPS} />
+            <Testimonial {...TEST_PROPS} />
+            <Testimonial {...TEST_PROPS} />
+        </Slider>
+    </div>
+);
 
 export default Testimonials;
