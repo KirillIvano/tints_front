@@ -13,8 +13,12 @@
 
 @media all and (max-width: $screen_md) {
     .footer {
-        .newsletter {
-            margin-top: $pad10;
+        padding: $pad8 0;
+
+        .social {
+            margin-top: $pad8;
+
+            max-width: 300px;
         }
     }
 }

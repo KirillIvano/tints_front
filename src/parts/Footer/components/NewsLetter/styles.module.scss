@@ -47,8 +47,13 @@
 
 @media all and (max-width: $screen_md) {
     .newsletter {
+        .title {
+            font-size: $font_sm;
+            margin-bottom: $pad5;
+        }
+
         .button {
-            margin-top: $pad2;
+            margin-top: $pad3;
         }
 
         .input {
