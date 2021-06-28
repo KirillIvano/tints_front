@@ -1,30 +1,34 @@
 import {useState} from 'react';
-import {useForm} from 'react-hook-form';
+
+import {Reference} from '@/uikit';
 
 import styles from './styles.module.scss';
-import {Typo, Input, Reference} from '@/uikit';
-import cn from 'classnames';
-
 
 
 const NewsLetter = () => {
     const [email, setEmail] = useState('');
 
     return (
-        <div className={cn(styles.social, 'col-md-4 col-md-offset-2')}>
-            <div className="row">
-                <div className={cn(styles.social_item, 'col-md-2')}>
+        <div className='row'>
+            <div className='col-xs-3'>
+                <Reference href='https://www.instagram.com' className={styles.social_item}>
                     <img src="/icons/instagram.svg" alt="" />
-                </div>
-                <div className={cn(styles.social_item, 'col-md-2')}>
+                </Reference>
+            </div>
+            <div className='col-xs-3'>
+                <Reference href='https://www.facebook.com' className={styles.social_item}>
                     <img src="/icons/facebook.svg" alt="" />
-                </div>
-                <div className={cn(styles.social_item, 'col-md-2')}>
+                </Reference>
+            </div>
+            <div className='col-xs-3'>
+                <Reference href='https://www.vk.com' className={styles.social_item}>
                     <img src="/icons/vk.svg" alt="" />
-                </div>
-                <div className={cn(styles.social_item, 'col-md-2')}>
+                </Reference>
+            </div>
+            <div className='col-xs-3'>
+                <Reference href='https://www.twitter.com' className={styles.social_item}>
                     <img src="/icons/twitter.svg" alt="" />
-                </div>
+                </Reference>
             </div>
         </div>
     );

@@ -9,13 +9,14 @@ import css from './styles.module.scss';
 
 
 const Header = () => {
-    const [visible, setVisible] = useState(false);
+    const [isMenuVisible, setMenuVisible] = useState(false);
+
     return (
-        <Context.Provider value={{visible, setVisible}}>
-            <header className={cn(css.header, (visible ? css.active : ''))}>
+        <Context.Provider value={{isMenuVisible, setMenuVisible}}>
+            <header className={cn(css.header, (isMenuVisible ? css.active : ''))}>
                 <Box className={css.header__content}>
                     <Logo className={css.header__logo} />
-                    <Nav className={cn(css.header__nav, (visible ? css.active : ''))} />
+                    <Nav className={cn(css.header__nav, (isMenuVisible ? css.active : ''))} />
                     <MobileMenu className={css.header__mobile_menu} />
                 </Box>
             </header>

@@ -27,7 +27,7 @@
 @media all and (max-width: $screen_md) {
     .header {
         height: 80px;
-        transition: .5s;
+        transition: 0.3s ease-in-out;
 
         &.active {
             margin-bottom: 210px;
@@ -37,7 +37,7 @@
     .header__nav {
         visibility: hidden;
         opacity: 0;
-        transition: .7s ease;
+        transition: 0.3s ease-in-out;
 
         &.active {
             visibility: visible;
@@ -48,7 +48,7 @@
     .header__logo {
         width: 160px;
     }
-    
+
     .header__mobile_menu {
         display: block;
     }

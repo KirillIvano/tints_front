@@ -1,21 +1,24 @@
 @import "~vars/pads";
 @import "~vars/colors";
-
-.social {
-    margin-top: auto;
-}
+@import "~vars/screen";
 
 .social_item {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    max-width: 100px;
+    margin: 0 auto;
+
     aspect-ratio: 1;
 
     border-radius: 50%;
     background-color: #fff;
-}
 
-.social_item:nth-child(n+2) {
-    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: $light_gray;
+    }
 }

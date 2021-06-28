@@ -4,9 +4,9 @@ import {Context} from '../Context/index';
 import css from './styles.module.scss';
 
 const Menu = ({className}: StyledProps) => {
-    const {visible, setVisible} = useContext(Context);
+    const {isMenuVisible, setMenuVisible} = useContext(Context);
     const handleClick = () => {
-        setVisible(!visible);
+        setMenuVisible(!isMenuVisible);
     };
 
     return (

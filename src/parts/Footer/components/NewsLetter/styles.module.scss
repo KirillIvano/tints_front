@@ -1,8 +1,9 @@
 @import "~vars/pads";
 @import "~vars/colors";
+@import "~vars/screen";
 
 .newsletter_title {
-    margin-bottom: $pad10;
+    margin-bottom: $pad8;
     padding-left: 0;
     width: 100%;
 }
@@ -35,4 +36,19 @@
 
 .button:active {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: $screen_md) {
+    .button {
+        margin-top: $pad2;
+    }
+
+    .email {
+        margin-right: 0;
+    }
 }
