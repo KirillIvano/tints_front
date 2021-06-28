@@ -1,55 +1,58 @@
 @import "~vars/pads";
 @import "~vars/colors";
 @import "~vars/screen";
+@import "~vars/fonts";
 
-.newsletter_title {
-    margin-bottom: $pad8;
-    padding-left: 0;
-    width: 100%;
-}
-
-.input {
-    height: 47px;
-}
-
-.wrapper {
-    margin-right: $pad5;
-    padding-left: 0;
-}
-
-.button {
-    z-index: 1;
-    padding: 10px;
-
-    width: max-content;
-
-    transition: background-color 0.3s ease-in-out;
-
-    border: 4px solid $white;
-    background-color: rgba(0, 0, 0, 0);
-    color: $white;
-}
-
-.button:focus,
-.button:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.button:active {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.subscribe {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media all and (max-width: $screen_md) {
-    .button {
-        margin-top: $pad2;
+.newsletter {
+    .title {
+        margin-bottom: $pad6;
     }
 
     .input {
-        margin-right: 0;
+        padding: $pad2;
+
+        border-radius: 0;
+        border: 2px solid $white;
+        font-size: $font_xs;
+    }
+
+    .wrapper {
+        padding-left: 0;
+    }
+
+    .button {
+        padding: $pad2 $pad4;
+
+        transition: background-color 0.3s ease-in-out;
+
+        border: 2px solid $white;
+        color: $white;
+        font-size: $font_xs;
+    }
+
+    .button:focus,
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .button:active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .newsletter {
+        .button {
+            margin-top: $pad2;
+        }
+
+        .input {
+            margin-right: 0;
+        }
     }
 }

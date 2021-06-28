@@ -2,20 +2,24 @@
 @import "~vars/colors";
 @import "~vars/screen";
 
-.social_item {
+.socialItem {
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
 
-    max-width: 100px;
-    margin: 0 auto;
-
-    aspect-ratio: 1;
+    padding-bottom: 100%;
 
     border-radius: 50%;
     background-color: #fff;
 
     transition: 0.3s ease-in-out;
+
+    .icon {
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     &:hover,
     &:focus {

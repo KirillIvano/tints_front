@@ -8,6 +8,10 @@
     }
 
     .label {
+        display: block;
+
+        margin-bottom: $pad1;
+
         color: $dark_gray;
         font-size: $font_xs;
     }
@@ -16,7 +20,6 @@
         width: 100%;
         display: block;
 
-        margin-top: $pad1;
         padding: $pad2 $pad4;
 
         border: 2px solid $light_gray;
@@ -30,13 +33,6 @@
 
     .input::placeholder {
         color: $light_gray;
-    }
-
-    .square {
-        margin-top: 0;
-
-        border-radius: 0;
-        border: 0;
     }
 
     .error {

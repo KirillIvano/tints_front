@@ -4,6 +4,6 @@ export type BannerDto = {
     buttonText: string;
     buttonUrl: string;
 
-    backgorundLg: string
-	backgorundSm: string
+    backgroundLg: string
+	backgroundSm: string
 }
