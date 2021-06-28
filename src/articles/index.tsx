@@ -1,0 +1,11 @@
+export {default as BoldTips} from './bold-tips';
+// export {default as Ethics} from './ethics';
+// export {default as HairCareTips} from './hair-care-tips';
+// export {default as HairSkinTests} from './hair-skin-tests';
+// export {default as HennaCream} from './henna-cream';
+// export {default as LightenerTips} from './lightener-tips';
+// export {default as OurBusiness} from './our-business';
+// export {default as OurColours} from './our-colours';
+// export {default as OurRange} from './our-range';
+// export {default as OurStory} from './our-story';
+// export {default as PermanentTips} from './permanent-tips';

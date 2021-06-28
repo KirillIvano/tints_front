@@ -1,0 +1,166 @@
+.global {
+    .container {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    h2,
+    h3 {
+        color: #91b2b4;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    ul {
+        padding-left: 40px;
+    }
+
+    p,
+    ul {
+        font-weight: 300;
+    }
+
+    h2,
+    h3,
+    p,
+    span,
+    b,
+    ul {
+        margin-bottom: 1rem;
+        line-height: 1.43;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .top__header p {
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .black {
+        color: #000;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    a:hover {
+        color: #7db4b6;
+        text-decoration: underline;
+    }
+
+    span {
+        color: #91b2b4;
+        font-weight: 500;
+    }
+
+    b {
+        font-weight: 500;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .section__item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    @media all and (min-width: 640px) {
+        .container {
+            width: 540px;
+            padding: 0;
+        }
+    }
+
+    @media all and (min-width: 768px) {
+        .container {
+            width: 720px;
+        }
+
+        section,
+        .reverse {
+            flex-direction: row;
+        }
+
+        .section__item {
+            width: 48%;
+        }
+    }
+
+    @media all and (min-width: 1024px) {
+        .container { width: 960px }
+    }
+
+    @media all and (min-width: 1280px) {
+        .container { width: 1140px }
+    }
+
+    /* Light */
+    @font-face {
+        font-family: 'Helvetica';
+        src:
+            local('Helvetica'),
+            url('../fonts/Helvetica-Light.ttf') format('truetype'),
+            url('../fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Helvetica-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    /* Regular */
+    @font-face {
+        font-family: 'Helvetica';
+        src:
+            local('Helvetica'),
+            url('../fonts/Helvetica-Regular.ttf') format('truetype'),
+            url('../fonts/Helvetica-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Helvetica-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Medium */
+    @font-face {
+        font-family: 'Helvetica';
+        src:
+            local('Helvetica'),
+            url('../fonts/Helvetica-Medium.ttf') format('truetype'),
+            url('../fonts/Helvetica-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Helvetica-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+}
