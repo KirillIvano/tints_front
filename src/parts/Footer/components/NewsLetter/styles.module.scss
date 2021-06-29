@@ -1,0 +1,63 @@
+@import "~vars/pads";
+@import "~vars/colors";
+@import "~vars/screen";
+@import "~vars/fonts";
+
+.newsletter {
+    .title {
+        margin-bottom: $pad6;
+    }
+
+    .input {
+        padding: $pad2;
+
+        border-radius: 0;
+        border: 2px solid $white;
+        font-size: $font_xs;
+    }
+
+    .wrapper {
+        padding-left: 0;
+    }
+
+    .button {
+        padding: $pad2 $pad4;
+
+        transition: background-color 0.3s ease-in-out;
+
+        border: 2px solid $white;
+        color: $white;
+        font-size: $font_xs;
+    }
+
+    .button:focus,
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .button:active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .newsletter {
+        .title {
+            font-size: $font_sm;
+            margin-bottom: $pad5;
+        }
+
+        .button {
+            margin-top: $pad3;
+        }
+
+        .input {
+            margin-right: 0;
+        }
+    }
+}

@@ -44,14 +44,16 @@ export const TextInput = React.forwardRef(({
 
     return (
         <div className={cn(css.inputWrapper, wrapperClass)}>
-            <label
-                className={cn(css.label, labelClass)}
-                htmlFor={inputId}
-            >
-                {labelText} {required && (
-                    <Typo as="span" size="xs" className={css.asteriks}>*</Typo>
-                )}
-            </label>
+            {labelText && (
+                <label
+                    className={cn(css.label, labelClass)}
+                    htmlFor={inputId}
+                >
+                    {labelText} {required && (
+                        <Typo as="span" size="xs" className={css.asteriks}>*</Typo>
+                    )}
+                </label>
+            )}
 
             <input
                 {...props}

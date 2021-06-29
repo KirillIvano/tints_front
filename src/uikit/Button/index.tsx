@@ -11,11 +11,14 @@ export type ButtonWidth = 'full' | 'normal';
 type ButtonProps = {
     size?: ButtonSize;
     width?: ButtonWidth;
+    square?: boolean;
+
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({
     size,
     width='normal',
+    square,
 
     className,
     ...props
@@ -25,6 +28,7 @@ export const Button = ({
         className={classnames(
             className,
             styles.button,
+            square ? styles.square : '',
             styles[`size_${size}`],
             styles[`width_${width}`],
         )}
