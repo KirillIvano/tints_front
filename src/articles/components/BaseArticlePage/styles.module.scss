@@ -1,6 +1,10 @@
+@import '~vars/pads';
+@import '~vars/colors';
+@import '~vars/fonts';
+
 .container {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: $pad5;
 
     h2,
     h3 {
@@ -92,7 +96,7 @@
         width: 100%;
     }
 
-    footer {
+    :global(.footer) {
         margin-top: 40px;
     }
 }
@@ -100,7 +104,6 @@
 @media all and (min-width: 640px) {
     .container {
         width: 540px;
-        padding: 0;
     }
 }
 
