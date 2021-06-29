@@ -12,7 +12,7 @@ const Tips = ({className}: StyledProps) => (
         <div className={cn('col-xs-12 col-md-4', styles.tip)}>
             <ArticlePreview
                 caption="Советы по перманентным краскам"
-                href="/articles/permament-tips"
+                href="/articles/permanent-tips"
                 image="/faqs/permanentPaints.png"
             />
         </div>
