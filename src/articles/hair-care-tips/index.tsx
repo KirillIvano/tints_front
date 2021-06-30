@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {ArticlePage} from '../components';
+import {CLIENT_ORIGIN} from '@/settings';
 
 const AdvicePage = () => (
     <ArticlePage>
@@ -17,7 +18,7 @@ const AdvicePage = () => (
                     перед окрашиванием или в качестве еженедельного ухода для ваших волос.
                 </p>
                 <p>
-                    1. Вымойте волосы <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">увлажняющим шампунем</a>,
+                    1. Вымойте волосы <a href={CLIENT_ORIGIN + '/product/35'}>увлажняющим шампунем</a>,
                     нанесите кремовую пену и смойте.
                 </p>
                 <p>
@@ -31,7 +32,7 @@ const AdvicePage = () => (
                     4. заколите или закрепите волосы, откиньтесь назад и расслабьтесь в течение 15 минут.
                 </p>
                 <p>
-                    5. Тщательно промойте волосы водой и нанесите на 5 минут <a href="https://tintsofnature.com/shop/care/hydrate-conditioner">кондиционер</a>.
+                    5. Тщательно промойте волосы водой и нанесите на 5 минут <a href={CLIENT_ORIGIN + '/product/38'}>кондиционер</a>.
                 </p>
                 <p>
                     Влюбитесь в то, какие мягкие, объемные и плотные ваши волосы после всего одной
@@ -41,19 +42,19 @@ const AdvicePage = () => (
         </section>
         <section>
             <div className="section__item">
-                <h3>Как использовать <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment...</a></h3>
-                <p><a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment </a>
+                <h3>Как использовать <a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment...</a></h3>
+                <p><a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment </a>
                     придаст вашим волосам невероятную мягкость и плотность, восстанавливая идеальный баланс протеинов
                     и влаги в структуре волос. Используйте как еженедельно, так и перед окрашиванием волос для достижения
                     максимального результата, в особенности перед окрашиванием седины.
                 </p>
                 <p>
-                    1. Вымойте волосы с <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">увлажняющим шампунем</a>,
+                    1. Вымойте волосы с <a href={CLIENT_ORIGIN + '/product/35'}>увлажняющим шампунем</a>,
                     тщательно промойте водой.
                 </p>
                 <p>
                     2. Высушите волосы полотенцем и нанесите 4-8 нажатий
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment"> Hydrate Treatment</a> от корней до кончиков.
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment</a> от корней до кончиков.
                 </p>
                 <p>
                     3. расчешите волосы.
@@ -63,7 +64,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     5. Тщательно промойте и нанесите на 5 минут
-                    <a href="https://tintsofnature.com/shop/care/hydrate-conditioner"> кондиционер</a>.
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/38'}>кондиционер</a>.
                 </p>
                 <p>
                     6. Промойте  водой и уложите.
@@ -105,22 +106,22 @@ const AdvicePage = () => (
         <section>
             <div className="section__item">
                 <h3>
-                    Как использовать <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine...</a>
+                    Как использовать <a href={CLIENT_ORIGIN + '/product/38'}>Seal and Shine...</a>
                 </h3>
                 <p>
-                    <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine</a> - это защитный
+                    <a href={CLIENT_ORIGIN + '/product/38'}>Seal and Shine</a> - это защитный
                     несмываемый кондиционер, который защищает ваши волосы от вредного ультрафиолетового излучения.
                 </p>
                 <p>
-                    <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine</a>
+                    <a href={CLIENT_ORIGIN + '/product/38'}>Seal and Shine</a>
                     &nbsp;можно использовать на сухих, влажных или высушенных полотенцем волосах.
                 </p>
                 <span>
                     Для влажных волос...
                 </span>
                 <p>
-                    1. Используйте <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">Hydrate Shampoo</a> и
-                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-conditioner">Hydrate Conditioner</a>.
+                    1. Используйте <a href={CLIENT_ORIGIN + '/product/35'}>Hydrate Shampoo</a> и
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/38'}>Hydrate Conditioner</a>.
                 </p>
                 <p>
                     2. Высушите волосы полотенцем и распылите на все волосы.

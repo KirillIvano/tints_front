@@ -1,3 +1,4 @@
+import {CLIENT_ORIGIN} from '@/settings';
 import React from 'react';
 
 import {ArticlePage} from '../components';
@@ -61,7 +62,7 @@ const AdvicePage = () => (
                     Пожалуйста, убедитесь, что вы провели тест на чувствительность кожи!
                 </span>
                 <p>
-                    1. Для <a href="https://tintsofnature.com/shop/permanent">перманентной краски для волос</a> используйте
+                    1. Для <a href={CLIENT_ORIGIN + '/catalog?categoryId=2'}>перманентной краски для волос</a> используйте
                     пластиковую чашу (или наш набор для смешивания Tints of Nature) смешайте колпачок Colour Gel и колпачок Colourfix.
                     (Пожалуйста, не используйте металлическую посуду или миски.)
                     <a href="https://tintsofnature.com/shop/semi-permanent">для крема хны </a>перемешайте.

@@ -7,8 +7,8 @@ const AdvicePage = () => (
     <ArticlePage>
         <div className="top__header">
             <p>
-                    Мы знаем, что окрашивание ваших волос может быть сложной задачей, поэтому мы собрали наши экспертные
-                    советы, чтобы вы получили наилучшие результаты от использования Tints of Nature Bold colours.
+                Мы знаем, что окрашивание ваших волос может быть сложной задачей, поэтому мы собрали наши экспертные
+                советы, чтобы вы получили наилучшие результаты от использования Tints of Nature Bold colours.
             </p>
             <p>
                     Просто нажмите на ссылку ниже, чтобы перейти к интересующему вас разделу.
@@ -55,7 +55,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     <span>Полезный совет:</span> для самых ярких и смелых результатов после мытья головы нанесите
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment"> Tints of Nature Hydrate
+                    <a href={CLIENT_ORIGIN + '/product/34'}> Tints of Nature Hydrate
                         Treatment</a> и оставьте на 15 минут, смойте, а затем перейдите к шагу 2.
                 </p>
                 <p>
@@ -89,7 +89,7 @@ const AdvicePage = () => (
                 </h2>
                 <p>
                     Чтобы достичь максимальных результатов от окрашивания, предварительно выполните уход для волос, с Tints of Nature
-                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment</a>
                     &nbsp;или <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
                     помните о проведении <span>теста на эластичность!</span>
                 </p>
@@ -104,7 +104,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     Полезный совет: для самых ярких, смелых результатов после мытья головы нанесите Tints of Nature
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a> и оставьте на 15
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment</a> и оставьте на 15
                     минут, смойте, а затем перейдите к шагу 3.
                 </p>
             </div>
@@ -142,7 +142,7 @@ const AdvicePage = () => (
                     средство, так как тепло является главным виновником выцветания окрашивания.
                 </p>
                 <p>
-                    5. При посещении бассейна, попробуйте наш <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine Leave In Conditioner</a>
+                    5. При посещении бассейна, попробуйте наш <a href={CLIENT_ORIGIN + '/product/38'}>Seal and Shine Leave In Conditioner</a>
                     &nbsp;прежде чем вы зайдёте в воду, для того чтобы защитить цвет от хлора.
                 </p>
                 <p>
@@ -158,7 +158,7 @@ const AdvicePage = () => (
                 </h2>
                 <p>
                     Чтобы достичь максимальных результатов от окрашивания, предварительно выполните уход для волос, с Tints of Nature
-                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
+                    &nbsp;<a href={CLIENT_ORIGIN + '/product/34'}>Hydrate Treatment</a>
                     &nbsp;или  <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
                     помните о проведении <span>теста на эластичность!</span>
                 </p>
