@@ -34,7 +34,7 @@ const AdvicePage = () => (
                     5. Тщательно промойте волосы водой и нанесите на 5 минут <a href="https://tintsofnature.com/shop/care/hydrate-conditioner">кондиционер</a>.
                 </p>
                 <p>
-                    Влюбитесь в то, какие мягкие , объемные и плотные ваши волосы после всего одной
+                    Влюбитесь в то, какие мягкие, объемные и плотные ваши волосы после всего одной
                     процедуры!
                 </p>
             </div>
@@ -42,18 +42,18 @@ const AdvicePage = () => (
         <section>
             <div className="section__item">
                 <h3>Как использовать <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment...</a></h3>
-                <p><a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
+                <p><a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment </a>
                     придаст вашим волосам невероятную мягкость и плотность, восстанавливая идеальный баланс протеинов
-                    и влаги в труктуре волс. Используйте как еженедельно, так и перед окрашиванием волос для достижения
-                    максимального результата , в особенности перед окрашиванием седины.
+                    и влаги в структуре волос. Используйте как еженедельно, так и перед окрашиванием волос для достижения
+                    максимального результата, в особенности перед окрашиванием седины.
                 </p>
                 <p>
-                    1. Вымойте волосы с <a href="https://tintsofnature.com/shop/care/hydrate-treatment">увлажняющим шампунем</a>,
+                    1. Вымойте волосы с <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">увлажняющим шампунем</a>,
                     тщательно промойте водой.
                 </p>
                 <p>
                     2. Высушите волосы полотенцем и нанесите 4-8 нажатий
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a> от корней до кончиков.
+                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment"> Hydrate Treatment</a> от корней до кончиков.
                 </p>
                 <p>
                     3. расчешите волосы.
@@ -63,7 +63,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     5. Тщательно промойте и нанесите на 5 минут
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">кондиционер</a>.
+                    <a href="https://tintsofnature.com/shop/care/hydrate-conditioner"> кондиционер</a>.
                 </p>
                 <p>
                     6. Промойте  водой и уложите.
@@ -86,13 +86,13 @@ const AdvicePage = () => (
             <div className="section__item">
                 <h3>Как использовать <a href="https://tintsofnature.com/shop/care/scalp-treatment">
                     средство для лечения кожи головы</a>...</h3>
-                <p><a href="https://tintsofnature.com/shop/care/scalp-treatment">Tints of Nature Scalp Treatment</a>
+                <p><a href="https://tintsofnature.com/shop/care/scalp-treatment">Tints of Nature Scalp Treatment </a>
                     это успокаивающее средство для раздраженной и чувствительной кожи головы. Изготовленная из нежных и натуральных
                     ингредиентов, наша процедура для кожи головы снимает раздражение с  кожи головы придает успокаивающее облегчение.
                 </p>
                 <p>
-                    <a href="https://tintsofnature.com/shop/care/scalp-treatment">Спрей</a> можно наносить на кожу в
-                    независимости от того что волосы сухие или влажные.
+                    <a href="https://tintsofnature.com/shop/care/scalp-treatment">Спрей</a> можно наносить на кожу вне
+                    зависимости от того, что волосы сухие или влажные.
                 </p>
                 <p>
                     1. Равномерно распылите на кожу головы и оставьте - смывать не нужно.
@@ -113,14 +113,14 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine</a>
-                    можно использовать на сухих, влажных или высушенных полотенцем волосах.
+                    &nbsp;можно использовать на сухих, влажных или высушенных полотенцем волосах.
                 </p>
                 <span>
                     Для влажных волос...
                 </span>
                 <p>
-                    1. Используйте <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">Hydrate Shampoo</a> &
-                    <a href="https://tintsofnature.com/shop/care/hydrate-conditioner">Hydrate Conditioner</a>.
+                    1. Используйте <a href="https://tintsofnature.com/shop/care/hydrate-shampoo">Hydrate Shampoo</a> и
+                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-conditioner">Hydrate Conditioner</a>.
                 </p>
                 <p>
                     2. Высушите волосы полотенцем и распылите на все волосы.

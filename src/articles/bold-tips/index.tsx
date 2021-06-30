@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {ArticlePage} from '../components';
+import {CLIENT_ORIGIN} from '@/settings';
 
 const AdvicePage = () => (
     <ArticlePage>
@@ -54,7 +55,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     <span>Полезный совет:</span> для самых ярких и смелых результатов после мытья головы нанесите
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Tints of Nature Hydrate
+                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment"> Tints of Nature Hydrate
                         Treatment</a> и оставьте на 15 минут, смойте, а затем перейдите к шагу 2.
                 </p>
                 <p>
@@ -88,15 +89,15 @@ const AdvicePage = () => (
                 </h2>
                 <p>
                     Чтобы достичь максимальных результатов от окрашивания, предварительно выполните уход для волос, с Tints of Nature
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
-                    или  <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
+                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
+                    &nbsp;или <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
                     помните о проведении <span>теста на эластичность!</span>
                 </p>
                 <p>
                     1. Купите желаемый оттенок Bold Colour и Bold Pasteliser.
                 </p>
                 <p>
-                    2. В миске смешайте Bold Colour с Bold Pasteliser в соотношение 1:1 .
+                    2. В миске смешайте Bold Colour с Bold Pasteliser в соотношении 1:1.
                 </p>
                 <p>
                     3. Выполните шаги 2-8 для нанесения Bold Colour, показанных выше.
@@ -122,9 +123,9 @@ const AdvicePage = () => (
                 <p>
                     1. Чем здоровее ваши волосы, тем лучше будет выглядеть результат окрашивания и тем дольше он будет держаться. К
                     сожалению, осветление ваших волос может поставить под угрозу их состояние до такой степени, что они не смогут
-                    удерживать результат окрашивания длительное время, поэтому вы захотите , чтобы они были в идеальном состоянии,
-                    прежде чем красить волосы. Если вашим волосам требуется восстанавление, попробуйте нашу линейку по уходу для
-                    повышения плотности и элластичности волос, прежде чем наносить краситель.
+                    удерживать результат окрашивания длительное время, поэтому вы захотите, чтобы они были в идеальном состоянии,
+                    прежде чем красить волосы. Если вашим волосам требуется восстановление, попробуйте нашу линейку по уходу для
+                    повышения плотности и эластичности волос, прежде чем наносить краситель.
                 </p>
                 <p>
                     2. Используйте прохладную воду для мытья волос, чтобы сохранить результат окрашивания. Более теплая вода поможет
@@ -132,8 +133,8 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     3. Не мойте голову каждый день! Это может показаться очевидным, но ваш цвет будет вымываться с каждой мойкой,
-                    поэтому постарайтесь делать перерыв по нескольку дней между мытьём головы. Если вас беспокоят нарощенные или
-                    быстро пачкающиеся волосы, используйте на корни волос
+                    поэтому постарайтесь делать перерыв по нескольку дней между мытьём головы. Если вас беспокоят наращенные или
+                    быстро пачкающиеся волосы, используйте на корни волос&nbsp;
                     <a href="https://tintsofnature.com/catalog/product/view/id/132/s/dry-shampoo/category/36/">Dry Shampoo</a>.
                 </p>
                 <p>
@@ -142,7 +143,7 @@ const AdvicePage = () => (
                 </p>
                 <p>
                     5. При посещении бассейна, попробуйте наш <a href="https://tintsofnature.com/shop/care/seal-shine-leave-in-conditioner">Seal and Shine Leave In Conditioner</a>
-                    прежде чем вы зайдёте в воду для того чтобы защитить цвет от хлора..
+                    &nbsp;прежде чем вы зайдёте в воду, для того чтобы защитить цвет от хлора.
                 </p>
                 <p>
                     6. Избегайте сульфатов в ваших средствах для волос, они сильно вымывают цвет. Наша линейка по уходу за волосами не
@@ -157,8 +158,8 @@ const AdvicePage = () => (
                 </h2>
                 <p>
                     Чтобы достичь максимальных результатов от окрашивания, предварительно выполните уход для волос, с Tints of Nature
-                    <a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
-                    или  <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
+                    &nbsp;<a href="https://tintsofnature.com/shop/care/hydrate-treatment">Hydrate Treatment</a>
+                    &nbsp;или  <a href="https://tintsofnature.com/shop/care/structure-treatment">Structure Treatment</a> и всегда
                     помните о проведении <span>теста на эластичность!</span>
                 </p>
                 <p>
@@ -166,7 +167,7 @@ const AdvicePage = () => (
                     защитить кожу.
                 </p>
                 <p>
-                    2. Если краситель попадёт на руки, не паникуйте! Чтобы удалить пятна используйте зубную пасту и небольшое количеством
+                    2. Если краситель попадёт на руки, не паникуйте! Чтобы удалить пятна, используйте зубную пасту и небольшое количеством
                     тёплой воды.
                 </p>
                 <p>
