@@ -25,7 +25,7 @@ const ContactsInfo = () => (
                 <Typo
                     as="span"
                     color="black"
-                    size="xxl"
+                    size="xl"
                     className={css.contactText}
                 >
                     +7 999 360 25 25
@@ -42,7 +42,7 @@ const ContactsInfo = () => (
                 <Typo
                     as="span"
                     color="black"
-                    size="xxl"
+                    size="xl"
                     className={css.contactText}
                 >
                     info@tints.ru
@@ -59,7 +59,7 @@ const ContactsInfo = () => (
                 <Typo
                     as="span"
                     color="black"
-                    size="xxl"
+                    size="xl"
                     className={css.contactText}
                 >
                     110235 Москва, ул. Пушкина 18, оф. 200
