@@ -5,7 +5,7 @@ import {ArticlePage} from '../components';
 const AdvicePage = () => (
     <ArticlePage>
         <div className="top__header center">
-            <h3 className="black">Наш Бизнес И Инновации</h3>
+            <h3 className="black">Наш бизнес и инновации</h3>
             <b>
                 Знаете ли вы, что большинство потребителей озабочены состоянием своих волос больше, чем
                 когда-либо? Именно поэтому в нашей компании Tints of Nature мы стремимся обеспечивать
@@ -19,7 +19,7 @@ const AdvicePage = () => (
             </div>
             <div className="section__item">
                 <h3 className="black">
-                    Инвестирование В Наши Продукты
+                    Инвестирование в наши продукты
                 </h3>
                 <b>
                     Мы постоянно повышаем качество компонентов, которые используем в производстве нашей

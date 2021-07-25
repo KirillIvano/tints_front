@@ -10,21 +10,6 @@ const AdvicePage = () => (
                 Мы знаем, что окрашивание ваших волос может быть сложной задачей, поэтому мы собрали наши экспертные
                 советы, чтобы вы получили наилучшие результаты от использования Tints of Nature Bold colours.
             </p>
-            <p>
-                    Просто нажмите на ссылку ниже, чтобы перейти к интересующему вас разделу.
-            </p>
-            <p>
-                <a href="#apply">Как наносить Tints of Nature Bold Colours</a>
-            </p>
-            <p>
-                <a href="#mix">Как смешать ваш идеальный пастельный оттенок...</a>
-            </p>
-            <p>
-                <a href="#care">Забота о цвете...</a>
-            </p>
-            <p>
-                <a href="#tips">Другие важные советы!</a>
-            </p>
         </div>
         <section className="reverse" id="apply">
             <div className="section__item">
@@ -33,7 +18,7 @@ const AdvicePage = () => (
             </div>
             <div className="section__item">
                 <h2>
-                        Как Наносить Tins of Nature Bold Colours...
+                        Как наносить Tins of Nature Bold Colours...
                 </h2>
                 <p>
                         Tints of Nature Bold Colours предназначены для натуральных светлых  или осветленных волос

@@ -7,7 +7,7 @@ const AdvicePage = () => (
         <section>
             <div className="content">
                 <h2 className="black">
-                    Цветовая Палитра Tints Of Nature
+                    Цветовая палитра Tints Of Nature
                 </h2>
                 <h3 className="black">
                     Перманентный краситель
