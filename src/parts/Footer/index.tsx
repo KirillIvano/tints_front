@@ -15,7 +15,7 @@ const Footer = () => (
                 <div className={cn(styles.newsletter, 'col-lg-6 col-md-8')}>
                     <NewsLetter />
                 </div>
-                <div className={cn(styles.social, 'col-md-4 col-lg-4 col-lg-offset-2')}>
+                <div className={cn(styles.social, 'col-md-4 col-lg-3 col-lg-offset-2')}>
                     <Social />
                 </div>
             </div>
