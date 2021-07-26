@@ -11,6 +11,7 @@ export type ButtonWidth = 'full' | 'normal';
 type ButtonProps = {
     size?: ButtonSize;
     width?: ButtonWidth;
+
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({

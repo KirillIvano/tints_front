@@ -10,8 +10,4 @@ export const transformProductToSku = ({sku, related, info, description}: Product
     description,
 });
 
-export const getBannerFromDto = ({backgorundLg, backgorundSm, ...banner}: BannerDto): Banner => ({
-    ...banner,
-    backgroundLg: backgorundLg,
-    backgroundSm: backgorundSm,
-});
+export const getBannerFromDto = (banner: BannerDto): Banner => banner;

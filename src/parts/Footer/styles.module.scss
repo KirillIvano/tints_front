@@ -1,7 +1,24 @@
 @import "~vars/colors";
 @import "~vars/pads";
+@import "~vars/screen";
 
 .footer {
     background: $firm;
-    padding: $pad10 0;
+    padding: $pad16 0;
+
+    .social {
+        align-self: flex-end;
+    }
+}
+
+@media all and (max-width: $screen_md) {
+    .footer {
+        padding: $pad8 0;
+
+        .social {
+            margin-top: $pad8;
+
+            max-width: 300px;
+        }
+    }
 }

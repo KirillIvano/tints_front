@@ -1,0 +1,42 @@
+@import "~vars/colors";
+
+.header {
+    &__button {
+        display: block;
+        position: relative;
+
+        width: 30px;
+        height: 20px;
+    
+        &::before, &::after, span {
+            content: "";
+            position: absolute;
+        
+            width: 100%;
+            height: 2px;
+        
+            background-color: $firm;
+            right: 0;
+        }
+    
+        &::before {
+            top: 0;
+        }
+    
+        &::after {
+            bottom: 0;
+        }
+    
+        span {
+            top: 9px;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

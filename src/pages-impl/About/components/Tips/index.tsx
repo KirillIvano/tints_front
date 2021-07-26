@@ -20,7 +20,7 @@ const Tips = ({className}: StyledProps) => (
             <ArticlePreview
                 caption="Наш бизнес"
                 href="/articles/our-business"
-                image="/about-us/business.png"
+                image="/about-us/business.jpg"
             />
         </div>
         <div className={cn('col-xs-12 col-md-4', styles.tip)}>
@@ -34,7 +34,7 @@ const Tips = ({className}: StyledProps) => (
             <ArticlePreview
                 caption="Наша палитра"
                 href="/articles/our-colours"
-                image="/about-us/palette.png"
+                image="/about-us/palette.jpg"
             />
         </div>
         <div className={cn('col-xs-12 col-md-4', styles.tip)}>
