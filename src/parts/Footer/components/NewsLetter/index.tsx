@@ -29,10 +29,7 @@ const NewsLetter = ({className}: StyledProps) => (
                     wrapperClass={cn(css.wrapper, 'col-md-8')}
                     placeholder='example@mail.ru'
                 />
-                <Button
-                    className={css.button}
-                    square
-                >
+                <Button className={css.button}>
                     Подписаться
                 </Button>
             </div>

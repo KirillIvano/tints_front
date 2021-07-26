@@ -12,7 +12,7 @@ const Tips = ({className}: StyledProps) => (
         <div className={cn('col-xs-12 col-md-4', styles.tip)}>
             <ArticlePreview
                 caption="Советы по перманентным краскам"
-                href="/articles/permament-tips"
+                href="/articles/permanent-tips"
                 image="/faqs/permanentPaints.png"
             />
         </div>
@@ -46,9 +46,9 @@ const Tips = ({className}: StyledProps) => (
         </div>
         <div className={cn('col-xs-12 col-md-4', styles.tip)}>
             <ArticlePreview
-                caption="Правильное высветление"
-                href="/articles/lightener-tips"
-                image="/faqs/highlighting.png"
+                caption="Важные советы"
+                href="/articles/bold-tips"
+                image="/faqs/BoldTips.jpg"
             />
         </div>
     </div>
